@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PercentageCollisionResistance: 0.01
   m_CollisionSpeedReductionTime: 0.2
-  m_ForcePlayerMultiplayer: 15
+  m_ForcePlayerMultiplayer: 8
   m_SpeedToBreakWindow: 10
   m_ScreenShakeDuration: 0.1
   m_ScreenShakeAmount: 0.08

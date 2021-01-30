@@ -7,7 +7,8 @@ public class ObjectFragment : MonoBehaviour
     // Start is called before the first frame update
     private Rigidbody2D rb2d;
     private SpriteRenderer spriteRenderer;
-    public float roationSpeed = 150f;
+    public float minRoationSpeed = 30;
+    public float maxRoationSpeed = 150;
     public float stopRoationSpeed = 1;
     bool startFadeOut = false;
     public float fadetime = 1.0f;
@@ -16,6 +17,11 @@ public class ObjectFragment : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        gameObject.transform.eulerAngles = new Vector3(
+            gameObject.transform.eulerAngles.x,
+            gameObject.transform.eulerAngles.y,
+            gameObject.transform.eulerAngles.z + Random.Range(-180.0f, 180.0f));
+        Debug.Log(gameObject.transform.eulerAngles);
     }
 
     // Update is called once per frame
@@ -25,8 +31,7 @@ public class ObjectFragment : MonoBehaviour
 
         if (moveSpeed.magnitude > stopRoationSpeed && !startFadeOut)
         {
-            Vector3 blcokedRotationAxis = new Vector3(0, 0, 1);
-            transform.Rotate(moveSpeed * roationSpeed * Time.deltaTime * blcokedRotationAxis);
+            transform.Rotate(Vector3.forward, moveSpeed.magnitude * Random.Range(minRoationSpeed, maxRoationSpeed) * Time.deltaTime);
         }
         else
         {
