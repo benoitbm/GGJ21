@@ -4,31 +4,37 @@ using UnityEngine;
 
 public class GlassWindow : MonoBehaviour
 {
-    public float percetnageCollisionResistance = 0.1f;
-    public float collisionSpeedReductionTime = 0.1f;
-    public float forcePlayerMultiplayer = 15f;
-    public float speedToBreakWindow = 3f;
-    public float screenShakeDuration = 0.1f;
-    public float screenShakeAmount = 0.08f;
+    public float m_PercentageCollisionResistance = 0.1f;
+    public float m_CollisionSpeedReductionTime = 0.1f;
+    public float m_ForcePlayerMultiplayer = 15f;
+    public float m_SpeedToBreakWindow = 3f;
+    public float m_ScreenShakeDuration = 0.1f;
+    public float m_ScreenShakeAmount = 0.08f;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            Transform playerTransform = other.gameObject.GetComponent<Transform>();
-            TempPlayerMovement playerMovement = other.gameObject.GetComponent<TempPlayerMovement>();
-
-            Vector2 moveSpeed = playerMovement.GetPreviousFrameVelocity();
-            if (moveSpeed.magnitude > speedToBreakWindow)
-            {
-                playerMovement.SetSpeedModifyer(percetnageCollisionResistance, collisionSpeedReductionTime);
-                Break(moveSpeed, playerTransform);
-                ScreenShake screenshake = Camera.main.GetComponent<ScreenShake>();
-                screenshake.shakeAmount = screenShakeAmount;
-                screenshake.shakeDuration = screenShakeDuration;
-            }
+            PlayerImpact(other.gameObject);
         }    
     }
+
+    public void PlayerImpact(GameObject player)
+    {
+        Transform playerTransform = player.GetComponent<Transform>();
+        PlayerController playerMovement = player.GetComponent<PlayerController>();
+
+        Vector2 moveSpeed = playerMovement.GetVelocity();
+        if (moveSpeed.sqrMagnitude > (m_SpeedToBreakWindow * m_SpeedToBreakWindow))
+        {
+            playerMovement.SetSpeedModifier(m_PercentageCollisionResistance, m_CollisionSpeedReductionTime);
+            Break(moveSpeed, playerTransform);
+            ScreenShake screenshake = Camera.main.GetComponent<ScreenShake>();
+            screenshake.shakeAmount = m_ScreenShakeAmount;
+            screenshake.shakeDuration = m_ScreenShakeDuration;
+        }
+    }
+
     private void Break(Vector2 moveSpeed, Transform playerTransform)
     {
         Destroy(gameObject.GetComponent<BoxCollider2D>());
@@ -38,7 +44,7 @@ public class GlassWindow : MonoBehaviour
         foreach (Transform child in transform)
         {
             child.gameObject.SetActive(true);
-            child.gameObject.GetComponent<BreakingGlassWindow>().ApplyForceOnFragments(moveSpeed * forcePlayerMultiplayer, playerTransform);
+            child.gameObject.GetComponent<BreakingGlassWindow>().ApplyForceOnFragments(moveSpeed * m_ForcePlayerMultiplayer, playerTransform);
         }
     }
 }

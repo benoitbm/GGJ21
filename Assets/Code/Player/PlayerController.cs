@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     BoxCollider2D m_PlayerCollider;
 
     Vector2 m_Velocity;
+    float m_SpeedModifier = 1.0f;
+    float m_SpeedModifierTimer = 0.0f;
 
     bool m_TouchGround;
     bool m_RequestedJump;
@@ -45,6 +47,10 @@ public class PlayerController : MonoBehaviour
     public bool IsAiming() { return m_IsAiming; }
 
     public float GetDashIntensityCharge() { return m_DashIntensity / m_DashMaxIntensity; }
+
+    public void SetSpeedModifier(float speedMult, float timer) { m_SpeedModifier = speedMult; m_SpeedModifierTimer = timer; }
+
+    public Vector2 GetVelocity() { return m_Velocity; }
 
     // Start is called before the first frame update
     void Start()
@@ -102,19 +108,32 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        float speedModif = 1.0f;
+        if (m_SpeedModifierTimer > 0.0f)
+        {
+            m_SpeedModifierTimer -= Time.fixedDeltaTime;
+            speedModif = m_SpeedModifier;
+        }
+
         // Applying the gravity
         m_Velocity.y += Physics2D.gravity.y * Time.fixedDeltaTime;
 
-        transform.Translate(m_Velocity * Time.fixedDeltaTime);
+        transform.Translate(m_Velocity * Time.fixedDeltaTime * speedModif);
 
         // Hit detection part
         m_TouchGround = false;
 
-        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, m_PlayerCollider.size, 0); 
+        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, m_PlayerCollider.size, 0, ~(LayerMask.GetMask("Glass"))); 
         foreach (Collider2D hit in hits)
         {
             if (hit == m_PlayerCollider)
                 continue;
+
+            if (hit.GetComponent<GlassWindow>())
+            {
+                GlassWindow window = hit.GetComponent<GlassWindow>();
+                window.PlayerImpact(gameObject);
+            }
 
             ColliderDistance2D hitDistance = hit.Distance(m_PlayerCollider);
             if (hitDistance.isOverlapped)

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4734905744570547218}
   - component: {fileID: 5002413609128859378}
   - component: {fileID: 81526846}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Indication
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3651736625736938624}
   - component: {fileID: 8417364188040806516}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Circle indicator
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 1458909618865836458}
   - component: {fileID: 4768549570908619926}
   - component: {fileID: 1655994117}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -304,10 +304,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Speed: 9
   m_WalkAcceleration: 75
-  m_AirAcceleration: 10
+  m_AirAcceleration: 30
   m_GroundDeceleration: 70
-  m_JumpHeight: 4
+  m_JumpHeight: 8
   m_SlowdownTimescale: 0.5
-  m_DashMaxIntensity: 15
+  m_DashMaxIntensity: 20
   m_DashChargingSpeed: 10
   m_RequiredPercentageToDash: 20
