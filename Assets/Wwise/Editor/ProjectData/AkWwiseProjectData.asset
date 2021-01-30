@@ -80,8 +80,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Dani\SoundTest
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.213855
+      minDuration: 0.213855
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit

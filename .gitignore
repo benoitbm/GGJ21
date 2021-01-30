@@ -64,5 +64,5 @@ Blend/GGJ21/GGJ21-UI/bin/
 Packages/packages-lock.json
 *.akd
 
-Assets/3rdParty/NoesisGUI/Theme/**/*.asset
+Assets/3rdParty/NoesisGUI/Theme/
 *.validationcache
