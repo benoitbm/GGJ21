@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Blend/GGJ21/GGJ21-UI/obj/
+Blend/GGJ21/GGJ21-UI/bin/
+!Blend/GGJ21/GGJ21-UI/GGJ21-UI.csproj
