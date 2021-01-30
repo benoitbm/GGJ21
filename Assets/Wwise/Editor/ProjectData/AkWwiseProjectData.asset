@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3c915ca509edb740af879a6c0977ca60
     GuidInternal: 
-    m_lastTime: -8585896291217758324
+    m_lastTime: -8585896274043041604
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d04ad3c3d4c96f4eb97bd415a2655ec0
     GuidInternal: 
-    m_lastTime: -8585896291218508971
+    m_lastTime: -8585896274043121679
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c5b67a1326a87b4eb73374134b2ec217
     GuidInternal: 
-    m_lastTime: -8585896291217983523
+    m_lastTime: -8585896274043071622
     List:
     - name: Main
       guid: 2f5c057c04f20e40b6117952d89efdc7
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Dani
     guid: 46d86fc2e1330c40acc13cc204a7aac9
     GuidInternal: 
-    m_lastTime: -8585896291219304656
+    m_lastTime: -8585896274043191731
     List:
     - name: SoundTest
       guid: cabf648e2dc18642bb20afa2eb8c53ed
@@ -80,8 +80,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Dani\SoundTest
       maxAttenuation: 0
-      maxDuration: 0.213855
-      minDuration: 0.213855
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -89,7 +89,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f6ebd04867c91f44a416a775dcac3ea8
     GuidInternal: 
-    m_lastTime: -8585896291219259622
+    m_lastTime: -8585896274043191731
     List: []
   - PhysicalPath: Events\Frank.wwu
     PathAndIcons:
@@ -98,7 +98,7 @@ MonoBehaviour:
     ParentPath: Frank
     guid: b31633ee69f3ab4596c3c7e863178272
     GuidInternal: 
-    m_lastTime: -8585896291219214578
+    m_lastTime: -8585896274043191731
     List: []
   - PhysicalPath: Events\Vasily.wwu
     PathAndIcons:
@@ -107,7 +107,7 @@ MonoBehaviour:
     ParentPath: Vasily
     guid: 92c7119a19e7c44d916603d058e1cd1e
     GuidInternal: 
-    m_lastTime: -8585896291219164538
+    m_lastTime: -8585896274043181724
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 60905c43df61a74b99f5081188de515b
     GuidInternal: 
-    m_lastTime: -8585896291218944346
+    m_lastTime: -8585896274043161709
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -127,7 +127,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 7e59c2a6490ea743b1ac781b90957e89
     GuidInternal: 
-    m_lastTime: -8585896291217893447
+    m_lastTime: -8585896274043061624
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -137,7 +137,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 47fd572b5ce3de4f9951114e7f0e7249
     GuidInternal: 
-    m_lastTime: -8585896291217848407
+    m_lastTime: -8585896274043051616
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -147,11 +147,8 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 935903a8e378ca41b7108c060a06dd51
     GuidInternal: 
-    m_lastTime: -8585896291217803369
+    m_lastTime: -8585896274043051616
     List: []
-  ExpandedItems:
-  - /GGJ21
-  - /GGJ21/Events
-  - /GGJ21/Events/Dani
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
