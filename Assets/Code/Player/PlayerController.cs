@@ -113,6 +113,7 @@ public class PlayerController : MonoBehaviour
         {
             m_SpeedModifierTimer -= Time.fixedDeltaTime;
             speedModif = m_SpeedModifier;
+            m_Velocity *= (1.0f - m_SpeedModifier);
         }
 
         // Applying the gravity
@@ -167,7 +168,7 @@ public class PlayerController : MonoBehaviour
     {
         if (m_IsAiming && GetDashIntensityCharge() >= ((float)m_RequiredPercentageToDash/100.0f))
         {
-            m_Velocity += (m_DashDirection * m_DashIntensity);
+            m_Velocity = (m_DashDirection * m_DashIntensity);
             m_TouchGround = false;
         }
 
