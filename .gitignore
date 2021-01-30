@@ -65,3 +65,4 @@ Packages/packages-lock.json
 *.akd
 
 Assets/3rdParty/NoesisGUI/Theme/**/*.asset
+*.validationcache
