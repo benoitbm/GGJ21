@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{137AB6C5-A826-4E7B-B733-74134B2EC217}" SchemaVersion="97">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{137AB6C5-A826-4E7B-B733-74134B2EC217}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{7C055C2F-F204-400E-B611-7952D89EFDC7}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Dani" ID="{C26FD846-33E1-400C-ACC1-3CC204A7AAC9}" WorkUnitID="{C26FD846-33E1-400C-ACC1-3CC204A7AAC9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{48D0EBF6-C967-441F-A416-A775DCAC3EA8}" WorkUnitID="{48D0EBF6-C967-441F-A416-A775DCAC3EA8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Frank" ID="{EE3316B3-F369-45AB-96C3-C7E863178272}" WorkUnitID="{EE3316B3-F369-45AB-96C3-C7E863178272}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Vasily" ID="{9A11C792-E719-4DC4-9166-03D058E1CD1E}" WorkUnitID="{9A11C792-E719-4DC4-9166-03D058E1CD1E}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

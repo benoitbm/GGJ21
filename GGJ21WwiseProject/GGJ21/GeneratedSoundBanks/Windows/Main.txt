@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1252261978	SoundTest			\Dani\SoundTest	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	29059666	TestSound	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Cos1_10C4C929.wem		\Actor-Mixer Hierarchy\Dani\TestSound		37788
+

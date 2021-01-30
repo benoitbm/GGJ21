@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{328F331D-7FB7-4605-BECF-09C00D6CFBFB}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Dani" ID="{328F331D-7FB7-4605-BECF-09C00D6CFBFB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="TestSound" ID="{CC3E7692-7463-4E2B-9871-4E22F3E669D3}" ShortID="65693438">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Cos1" ID="{9820FD2A-C8F9-480F-820C-49B9814842B5}">
+							<Language>SFX</Language>
+							<AudioFile>Cos1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="29059666"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Cos1" ID="{9820FD2A-C8F9-480F-820C-49B9814842B5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
