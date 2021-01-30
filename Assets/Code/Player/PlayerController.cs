@@ -26,6 +26,10 @@ public class PlayerController : MonoBehaviour
     bool m_TouchGround;
     bool m_RequestedJump;
 
+    [SerializeField, Tooltip("The aimed timescale when slowing down time to charge power")]
+    float m_SlowdownTimescale = 0.5f;
+    float m_WantedTimeScale = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +38,16 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetMouseButton(0) || Mathf.Abs(Input.GetAxisRaw("Aim")) >= 0.2)
+        {
+            m_WantedTimeScale = Mathf.MoveTowards(m_WantedTimeScale, m_SlowdownTimescale, Time.unscaledDeltaTime * 0.5f);
+        }
+        else
+        {
+            m_WantedTimeScale = Mathf.MoveTowards(m_WantedTimeScale, 1.0f, Time.unscaledDeltaTime);
+        }
+        Time.timeScale = m_WantedTimeScale;
+
         // Putting an OR, as the Update and FixedUpdate (which is a regular physics based, regardless of FPS) don't run at same frame rate.
         // So you can have done 5 updates for 1 fixed update.
         m_RequestedJump |= Input.GetButtonDown("Jump");
