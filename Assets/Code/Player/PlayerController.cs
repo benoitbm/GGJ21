@@ -30,6 +30,22 @@ public class PlayerController : MonoBehaviour
     float m_SlowdownTimescale = 0.5f;
     float m_WantedTimeScale = 1.0f;
 
+    Vector2 m_DashDirection;
+    float m_DashIntensity;
+    bool m_IsAiming;
+
+    [SerializeField, Tooltip("The maximum power intensity when dashing")]
+    float m_DashMaxIntensity = 20.0f;
+    [SerializeField, Tooltip("The charging speed modifier when preparing a dash")]
+    float m_DashChargingSpeed = 5.0f;
+    [SerializeField, Range(1,100), Tooltip("The minimum required percentage to trigger a dash")]
+    int m_RequiredPercentageToDash = 20;
+
+    public Vector2 GetDashDirection() { return m_DashDirection; }
+    public bool IsAiming() { return m_IsAiming; }
+
+    public float GetDashIntensityCharge() { return m_DashIntensity / m_DashMaxIntensity; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,10 +56,15 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButton(0) || Mathf.Abs(Input.GetAxisRaw("Aim")) >= 0.2)
         {
+            m_IsAiming = true;
+            CaptureMouse();
             m_WantedTimeScale = Mathf.MoveTowards(m_WantedTimeScale, m_SlowdownTimescale, Time.unscaledDeltaTime * 0.5f);
+            m_DashIntensity += Time.unscaledDeltaTime * m_DashChargingSpeed;
+            m_DashIntensity = Mathf.Clamp(m_DashIntensity, 0.0f, m_DashMaxIntensity);
         }
         else
         {
+            ReleaseDash();
             m_WantedTimeScale = Mathf.MoveTowards(m_WantedTimeScale, 1.0f, Time.unscaledDeltaTime);
         }
         Time.timeScale = m_WantedTimeScale;
@@ -111,5 +132,27 @@ public class PlayerController : MonoBehaviour
 
         // Physics update was done, we can clear the jump flag.
         m_RequestedJump = false;
+    }
+
+
+    private void CaptureMouse()
+    {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = Camera.main.nearClipPlane;
+        Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(mousePos);
+
+        m_DashDirection = new Vector2(mousePosWorld.x - transform.position.x, mousePosWorld.y - transform.position.y).normalized;
+    }
+
+    private void ReleaseDash()
+    {
+        if (m_IsAiming && GetDashIntensityCharge() >= ((float)m_RequiredPercentageToDash/100.0f))
+        {
+            m_Velocity += (m_DashDirection * m_DashIntensity);
+            m_TouchGround = false;
+        }
+
+        m_DashIntensity = 0.0f;
+        m_IsAiming = false;
     }
 }
