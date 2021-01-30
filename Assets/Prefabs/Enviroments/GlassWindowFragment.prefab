@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4736261728183164876}
   - component: {fileID: -604185411753806326}
   - component: {fileID: -7869230198108622008}
-  - component: {fileID: 5545418296038797900}
+  - component: {fileID: -1748628578306845491}
   m_Layer: 0
   m_Name: GlassWindowFragment
   m_TagString: Untagged
@@ -132,7 +132,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5545418296038797900
+--- !u!114 &-1748628578306845491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,8 +141,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4245499187160333760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cff372d8c2241046b005f38f6cf8da0, type: 3}
+  m_Script: {fileID: 11500000, guid: a1a084aa1c569784db840e14e539e890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roationSpeed: 150
+  roationSpeed: 3500
   stopRoationSpeed: 1
+  fadetime: 1

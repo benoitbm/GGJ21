@@ -6,7 +6,7 @@ public class RotateWhileHasSpeed : MonoBehaviour
 {
     // Start is called before the first frame update
     private Rigidbody2D rb2d;
-    public float roationSpeed = 1.5f;
+    public float roationSpeed = 150f;
     public float stopRoationSpeed = 2;
     void Start()
     {
