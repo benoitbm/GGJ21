@@ -4,6 +4,6 @@
     <Canvas.Resources>
     </Canvas.Resources>
     <Viewbox x:Name="ViewboxRoot">
-        <Grid x:Name="ContentRoot" Width="3840" Height="2160" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Grid x:Name="ContentRoot" Width="1920" Height="1080" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Viewbox>
 </Canvas>

@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29355477be96127469aed699dd82b4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _xaml: {fileID: 11400000, guid: 0faf81c62540e88419a12db276f31660, type: 2}
+  _xaml: {fileID: 11400000, guid: 875f6461661808c458cf32f027344df9, type: 2}
   _texture: {fileID: 0}
   _isPPAAEnabled: 0
   _tessellationMaxPixelError: 0.4
