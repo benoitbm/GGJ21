@@ -10,11 +10,11 @@ using System.Windows.Controls;
 namespace GGJ21_UI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Test.xaml
     /// </summary>
-    public partial class MainWindow : UserControl
+    public partial class Test : UserControl
     {
-        public MainWindow()
+        public Test()
         {
             this.InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace GGJ21_UI
 #if NOESIS
         private void InitializeComponent()
         {
-            Noesis.GUI.LoadComponent(this, "Assets/UI/MainMenu.xaml");
+            Noesis.GUI.LoadComponent(this, "Assets/UI/Test.xaml");
         }
 #endif
     }

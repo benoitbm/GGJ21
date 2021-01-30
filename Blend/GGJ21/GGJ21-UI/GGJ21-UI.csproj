@@ -51,11 +51,11 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\Assets\UI\App.xaml.cs">
-      <Link>App.xaml.cs</Link>
-    </Compile>
     <Compile Include="..\..\..\Assets\UI\MainWindow.xaml.cs">
       <Link>MainWindow.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Assets\UI\Test.xaml.cs">
+      <Link>Test.xaml.cs</Link>
     </Compile>
     <Compile Include="..\..\..\Assets\UI\UserControl1.xaml.cs">
       <Link>UserControl1.xaml.cs</Link>
@@ -86,11 +86,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="..\..\..\Assets\UI\App.xaml">
-      <Link>App.xaml</Link>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="..\..\..\Assets\UI\MainWindow.xaml">
       <Link>MainWindow.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
@@ -103,10 +98,6 @@
     </Page>
     <Page Include="..\..\..\Assets\UI\UserControl1.xaml">
       <Link>UserControl1.xaml</Link>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MainCanvas.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
