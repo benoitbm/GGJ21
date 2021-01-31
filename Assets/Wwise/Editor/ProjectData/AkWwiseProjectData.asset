@@ -167,8 +167,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Vasily\Shout_Inhale
       maxAttenuation: 30
-      maxDuration: 0.486864
-      minDuration: 0.432768
+      maxDuration: 0.400143
+      minDuration: 0.268469
     - name: Shout_Shout
       guid: 7346833a3e77e847bae406db044b641e
       id: 1912761094
@@ -189,7 +189,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 60905c43df61a74b99f5081188de515b
     GuidInternal: 
-    m_lastTime: -8585894902739461312
+    m_lastTime: -8585894882321007398
     List:
     - name: Shout_Charge
       guid: 974a1e2feb21194cbeb0904d25ca68af
@@ -208,7 +208,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 7e59c2a6490ea743b1ac781b90957e89
     GuidInternal: 
-    m_lastTime: -8585894960724465838
+    m_lastTime: -8585894895675821032
     List:
     - name: Ambince_State
       guid: 5e660d493251104ca57e47ff47cc5250
