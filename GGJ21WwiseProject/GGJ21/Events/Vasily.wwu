@@ -91,6 +91,43 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Character_Foley" ID="{CA92B972-C13F-43B4-9C14-943724B9C913}" ShortID="985951817">
+					<ChildrenList>
+						<Event Name="Footstep" ID="{C11DF26A-E5A2-4BBA-A9C5-D2D506160B7E}">
+							<ChildrenList>
+								<Action Name="" ID="{E86D8DBD-FD82-4A96-95D0-209133CC0C54}" ShortID="857713203">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footstep" ID="{0656BB89-8C2F-4E07-AB51-DD0D44BB438A}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Landing" ID="{6E1EF6F1-774B-4A20-97FE-3AEB1141B4EF}">
+							<ChildrenList>
+								<Action Name="" ID="{F97ECEAD-3D09-47F2-B234-FB6DA70DADE3}" ShortID="490578828">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Landing" ID="{5D5F8BEA-801C-48EA-B9B1-ED2E1BBD7C34}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Swhoosh" ID="{35AA9B0C-D63E-408F-BEB4-7E77F87860CC}">
+							<ChildrenList>
+								<Action Name="" ID="{F3CC2FD4-4847-4D28-9C4A-3DD5411FB392}" ShortID="748825997">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Swhoosh" ID="{F6AE2839-8733-4743-AC09-C5C405B227D0}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

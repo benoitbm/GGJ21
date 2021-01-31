@@ -150,7 +150,7 @@ public class PlayerController : MonoBehaviour
         m_TouchGround = false;
         m_PlayerInteractions.ClearInteraction();
 
-        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, m_PlayerCollider.size, 0, ~(LayerMask.GetMask("Glass") | LayerMask.GetMask("SoundTrigger"))); 
+        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, m_PlayerCollider.size, 0, ~(LayerMask.GetMask("Glass"))); 
         foreach (Collider2D hit in hits)
         {
             if (hit == m_PlayerCollider)
@@ -171,7 +171,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
-            if (hit.GetComponent<Appartment>())
+            if (hit.tag == "Appartment")
             {
                 m_IsInside = true;
             }

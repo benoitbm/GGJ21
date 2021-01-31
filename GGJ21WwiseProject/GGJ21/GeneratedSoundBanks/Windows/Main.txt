@@ -1,9 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1252261978	SoundTest			\Dani\SoundTest	
 	1345175672	Play_Amb_Global_Blend			\Vasily\Play_Amb_Global_Blend	
+	1803035582	Swhoosh			\Vasily\Character_Foley\Swhoosh	
+	1866025847	Footstep			\Vasily\Character_Foley\Footstep	
 	1912761094	Shout_Shout			\Vasily\Shout_Shout	
 	2210254522	Shout_Inhale			\Vasily\Shout_Inhale	
 	2419553536	GlassBreak			\Vasily\GlassBreak	
+	2548270042	Landing			\Vasily\Character_Foley\Landing	
 	3582693563	Shout_Charge			\Vasily\Shout_Charge	
 	3627491425	GlassShard			\Vasily\GlassShard	
 
@@ -16,9 +19,9 @@ State	ID	Name	State Group			Notes
 	3553349781	Inside	Ambince_State			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	155916653	Inside	Ambince_State	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\OutdoorsBed		
 	236024207	Outside	Ambince_State	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Indoors		
 	644617528	Inside	Ambince_State	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors		
+	853499059	Inside	Ambince_State	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\OutdoorsBed		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3582693563	Shout_Charge			\Default Work Unit\Shout_Charge	
@@ -26,37 +29,49 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	604505077	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
+	689192237	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	987364011	Wwise_Guitar_Distortion_(Custom)	Wwise Guitar Distortion			
 	3487820010	One_Tap_Half_Second	Wwise Delay			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	9263921	Shout2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Shout2_9073DE96.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Shout\Shout2		301640
+	9020182	FootstepL2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\FootstepL2_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Footstep\Footstep_L\FootstepL2		192064
+	9263921	Shout2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Shout2_9073DE96.wem		\Actor-Mixer Hierarchy\Vasily\SFX\SoutMaster\Shout\Shout2		301640
 	29059666	TestSound	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Cos1_10C4C929.wem		\Actor-Mixer Hierarchy\Dani\TestSound		37788
+	57700113	FootstepL1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\FootstepL1_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Footstep\Footstep_L\FootstepL1		192064
 	94172068	FootstepsAmb5	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb5_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb5		1920064
 	102707340	Can2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Can2_85300A95.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Can\Can2		675904
 	131237825	Can1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Can1_85300A95.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Can\Can1		675904
+	151455923	FootstepR3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\FootstepR3_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Footstep\Footstep_R\FootstepR3		192064
+	197644207	Landing1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\Landing1_B71130F1.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Landing\Landing1		48844
 	209724574	GlassBit4 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit4 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit4 (1)		96064
-	257946923	Charrrrrge	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Charge1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Charge\Charrrrrge		96064
-	261955874	Breath4	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Breath4_CC16D742.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Inhale\Breath4		104408
-	263683147	Shout3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Shout3_4A5E74C5.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Shout\Shout3		290416
+	257946923	Charrrrrge	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Charge1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Vasily\SFX\SoutMaster\Charge\Charrrrrge		96064
+	261955874	Breath4	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Breath4_0010E5F7.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Inhale\Breath4		104408
+	263683147	Shout3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Shout3_4A5E74C5.wem		\Actor-Mixer Hierarchy\Vasily\SFX\SoutMaster\Shout\Shout3		290416
+	280085697	Landing2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\Landing2_CEC911A1.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Landing\Landing2		52404
+	303199115	FootstepL3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\FootstepL3_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Footstep\Footstep_L\FootstepL3		192064
 	361987799	Squeak3Rare	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Squeak3Rare_1F137345.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Squak\Squeak3Rare		991296
 	368970212	FootstepsAmb1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb1_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb1		1920064
 	382754437	Breath2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Breath2_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Inhale\Breath2		96064
 	390854284	GlassBit1 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit1 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit1 (1)		96064
 	392815547	FootstepsAmb4	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb4_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb4		1920064
+	394686588	Swoosh3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\Swoosh3_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Swhoosh\Swoosh3		192064
 	438564464	GlassBreak	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBreak_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassBreak\GlassBreak		704308
+	580418767	Swoosh2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\Swoosh2_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Swhoosh\Swoosh2		192064
 	682873521	Breath3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Breath3_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Inhale\Breath3		96064
 	712890661	FootstepsAmb2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb2_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb2		1920064
 	748047387	GlassBreak3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBreak3_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassBreak\GlassBreak3		384064
 	750179482	GlassBit3 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit3 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit3 (1)		96064
-	750572623	Shout1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Shout1_BAA9A14A.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Shout\Shout1		315312
+	750572623	Shout1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Shout1_BAA9A14A.wem		\Actor-Mixer Hierarchy\Vasily\SFX\SoutMaster\Shout\Shout1		315312
+	826989959	FootstepR1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\FootstepR1_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Footstep\Footstep_R\FootstepR1		192064
 	853816082	FootstepsAmb3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb3_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb3		1920064
-	928306418	Breath1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Breath1_38F63A3A.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Inhale\Breath1		70072
+	913370670	FootstepR2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\FootstepR2_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Footstep\Footstep_R\FootstepR2		192064
+	928306418	Breath1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Breath1_C10EC069.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Inhale\Breath1		70072
 	938553613	GlassBreak2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBreak2_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassBreak\GlassBreak2		384064
 	968167697	Squeak1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Squeak1_1F137345.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Squak\Squeak1		991296
 	1023634776	GlassBit2 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit2 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit2 (1)		96064
 	1023831991	Can3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Can3_85300A95.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Can\Can3		675904
 	1064096417	Squeak2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Squeak2_1F137345.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Squak\Squeak2		991296
+	1073439711	Swoosh1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\Swoosh1_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Swhoosh\Swoosh1		192064
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	351576598	OutdoorsBed	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\OutdoorsBed_D79FB2B7.wem	351576598.wem	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\OutdoorsBed	

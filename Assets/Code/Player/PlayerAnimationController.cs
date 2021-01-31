@@ -6,6 +6,7 @@ public class PlayerAnimationController : MonoBehaviour
 {
     public PlayerController playerContoller;
     private Animator animator;
+    private bool m_TouchGroundPreviousFrame;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,10 +52,16 @@ public class PlayerAnimationController : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
-
         //Jumping
-        bool isTrouchGround = playerContoller.GetTouchGround();
-        animator.SetBool("IsTouchingGround", isTrouchGround);
+        bool currentfameTouchGround = playerContoller.GetTouchGround();
+        animator.SetBool("IsTouchingGround", currentfameTouchGround);
+
+        if (!m_TouchGroundPreviousFrame && currentfameTouchGround)
+        {
+            AkSoundEngine.PostEvent("Landing", gameObject);
+        }
+        
+        m_TouchGroundPreviousFrame = currentfameTouchGround;
     }
     void Update()
     {
@@ -67,6 +74,7 @@ public class PlayerAnimationController : MonoBehaviour
     public void OnPlayerJump()
     {
         animator.SetTrigger("Jumping");
+        AkSoundEngine.PostEvent("Swhoosh", gameObject);
     }
 
     public void OnPlayerHurt(bool isDamageApplyed)

@@ -89,7 +89,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f6ebd04867c91f44a416a775dcac3ea8
     GuidInternal: 
-    m_lastTime: -8585894917111275111
+    m_lastTime: -8585894865529845349
     List: []
   - PhysicalPath: Events\Frank.wwu
     PathAndIcons:
@@ -107,8 +107,34 @@ MonoBehaviour:
     ParentPath: Vasily
     guid: 92c7119a19e7c44d916603d058e1cd1e
     GuidInternal: 
-    m_lastTime: -8585894902739596434
+    m_lastTime: -8585894855703944372
     List:
+    - name: Character_Foley
+      guid: 72b992ca3fc1b4439c14943724b9c913
+      id: 1567637474
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Character_Foley
+        ObjectType: 4
+      Path: Vasily\Character_Foley
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Footstep
+      guid: 6af21dc1a2e5ba4ba9c5d2d506160b7e
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Character_Foley
+        ObjectType: 4
+      - ElementName: Footstep
+        ObjectType: 3
+      Path: Vasily\Character_Foley\Footstep
+      maxAttenuation: 30
+      maxDuration: 1
+      minDuration: 1
     - name: GlassBreak
       guid: 9478faf2e888d24983e442b72f62a1f6
       id: 2419553536
@@ -133,6 +159,20 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 0.629961
       minDuration: 0.445449
+    - name: Landing
+      guid: f1f61e6e4b77204a97fe3aeb1141b4ef
+      id: 2548270042
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Character_Foley
+        ObjectType: 4
+      - ElementName: Landing
+        ObjectType: 3
+      Path: Vasily\Character_Foley\Landing
+      maxAttenuation: 30
+      maxDuration: 0.986555
+      minDuration: 0.272601
     - name: Play_Amb_Global_Blend
       guid: 0d1f8138f2471d41938bbf9c227e3c8c
       id: 1345175672
@@ -181,6 +221,20 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 1.749633
       minDuration: 1.512257
+    - name: Swhoosh
+      guid: 0c9baa353ed68f40beb47e77f87860cc
+      id: 1803035582
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Character_Foley
+        ObjectType: 4
+      - ElementName: Swhoosh
+        ObjectType: 3
+      Path: Vasily\Character_Foley\Swhoosh
+      maxAttenuation: 30
+      maxDuration: 1
+      minDuration: 1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -261,10 +315,6 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585896274043051616
     List: []
-  ExpandedItems:
-  - /GGJ21
-  - /GGJ21/States
-  - /GGJ21/States/Default Work Unit
-  - /GGJ21/States/Default Work Unit/Ambince_State
+  ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

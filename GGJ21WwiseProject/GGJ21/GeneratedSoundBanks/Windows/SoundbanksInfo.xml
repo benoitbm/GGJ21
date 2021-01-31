@@ -25,11 +25,39 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1657341204">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4250125367">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Vasily\Character_Foley\Footstep" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000">
+					<IncludedMemoryFiles>
+						<File Id="9020182" Language="SFX">
+							<ShortName>SFX\CharacterFoley\FootstepL2.wav</ShortName>
+							<Path>SFX\SFX\CharacterFoley\FootstepL2_10C4C929.wem</Path>
+						</File>
+						<File Id="57700113" Language="SFX">
+							<ShortName>SFX\CharacterFoley\FootstepL1.wav</ShortName>
+							<Path>SFX\SFX\CharacterFoley\FootstepL1_10C4C929.wem</Path>
+						</File>
+						<File Id="151455923" Language="SFX">
+							<ShortName>SFX\CharacterFoley\FootstepR3.wav</ShortName>
+							<Path>SFX\SFX\CharacterFoley\FootstepR3_10C4C929.wem</Path>
+						</File>
+						<File Id="303199115" Language="SFX">
+							<ShortName>SFX\CharacterFoley\FootstepL3.wav</ShortName>
+							<Path>SFX\SFX\CharacterFoley\FootstepL3_10C4C929.wem</Path>
+						</File>
+						<File Id="826989959" Language="SFX">
+							<ShortName>SFX\CharacterFoley\FootstepR1.wav</ShortName>
+							<Path>SFX\SFX\CharacterFoley\FootstepR1_10C4C929.wem</Path>
+						</File>
+						<File Id="913370670" Language="SFX">
+							<ShortName>SFX\CharacterFoley\FootstepR2.wav</ShortName>
+							<Path>SFX\SFX\CharacterFoley\FootstepR2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2419553536" Name="GlassBreak" ObjectPath="\Events\Vasily\GlassBreak" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.498307" DurationMax="4.621312">
 					<IncludedMemoryFiles>
 						<File Id="438564464" Language="SFX">
@@ -63,6 +91,18 @@
 						<File Id="1023634776" Language="SFX">
 							<ShortName>SFX\GlassBit2 (1).wav</ShortName>
 							<Path>SFX\SFX\GlassBit2 (1)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2548270042" Name="Landing" ObjectPath="\Events\Vasily\Character_Foley\Landing" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.254057" DurationMax="0.272601">
+					<IncludedMemoryFiles>
+						<File Id="197644207" Language="SFX">
+							<ShortName>SFX\CharacterFoley\Landing1.wav</ShortName>
+							<Path>SFX\SFX\CharacterFoley\Landing1_B71130F1.wem</Path>
+						</File>
+						<File Id="280085697" Language="SFX">
+							<ShortName>SFX\CharacterFoley\Landing2.wav</ShortName>
+							<Path>SFX\SFX\CharacterFoley\Landing2_CEC911A1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -136,7 +176,7 @@
 					<IncludedMemoryFiles>
 						<File Id="261955874" Language="SFX">
 							<ShortName>SFX\Breath4.wav</ShortName>
-							<Path>SFX\SFX\Breath4_CC16D742.wem</Path>
+							<Path>SFX\SFX\Breath4_0010E5F7.wem</Path>
 						</File>
 						<File Id="382754437" Language="SFX">
 							<ShortName>SFX\Breath2.wav</ShortName>
@@ -148,7 +188,7 @@
 						</File>
 						<File Id="928306418" Language="SFX">
 							<ShortName>SFX\Breath1.wav</ShortName>
-							<Path>SFX\SFX\Breath1_38F63A3A.wem</Path>
+							<Path>SFX\SFX\Breath1_C10EC069.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<ActionPostEvent>
@@ -176,6 +216,22 @@
 						<File Id="29059666" Language="SFX">
 							<ShortName>Cos1.wav</ShortName>
 							<Path>SFX\Cos1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1803035582" Name="Swhoosh" ObjectPath="\Events\Vasily\Character_Foley\Swhoosh" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000">
+					<IncludedMemoryFiles>
+						<File Id="394686588" Language="SFX">
+							<ShortName>SFX\CharacterFoley\Swoosh3.wav</ShortName>
+							<Path>SFX\SFX\CharacterFoley\Swoosh3_10C4C929.wem</Path>
+						</File>
+						<File Id="580418767" Language="SFX">
+							<ShortName>SFX\CharacterFoley\Swoosh2.wav</ShortName>
+							<Path>SFX\SFX\CharacterFoley\Swoosh2_10C4C929.wem</Path>
+						</File>
+						<File Id="1073439711" Language="SFX">
+							<ShortName>SFX\CharacterFoley\Swoosh1.wav</ShortName>
+							<Path>SFX\SFX\CharacterFoley\Swoosh1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
