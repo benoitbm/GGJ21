@@ -89,7 +89,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f6ebd04867c91f44a416a775dcac3ea8
     GuidInternal: 
-    m_lastTime: -8585894865529845349
+    m_lastTime: -8585894822059495475
     List: []
   - PhysicalPath: Events\Frank.wwu
     PathAndIcons:
@@ -107,8 +107,36 @@ MonoBehaviour:
     ParentPath: Vasily
     guid: 92c7119a19e7c44d916603d058e1cd1e
     GuidInternal: 
-    m_lastTime: -8585894855703944372
+    m_lastTime: -8585894788389661467
     List:
+    - name: ATM_PlayerFull
+      guid: e89bf08d70afc5478979f444c46500d6
+      id: 1352310214
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Items
+        ObjectType: 4
+      - ElementName: ATM_PlayerFull
+        ObjectType: 3
+      Path: Vasily\Items\ATM_PlayerFull
+      maxAttenuation: 30
+      maxDuration: 1.123491
+      minDuration: 0.891715
+    - name: ATM_Use
+      guid: 6aed53d4e7821e46b6812eefb3d985b0
+      id: 1178451283
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Items
+        ObjectType: 4
+      - ElementName: ATM_Use
+        ObjectType: 3
+      Path: Vasily\Items\ATM_Use
+      maxAttenuation: 30
+      maxDuration: 2.246
+      minDuration: 1.782651
     - name: Character_Foley
       guid: 72b992ca3fc1b4439c14943724b9c913
       id: 1567637474
@@ -159,6 +187,18 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 0.629961
       minDuration: 0.445449
+    - name: Items
+      guid: 549884937f708c4ca83ebd543552dd7c
+      id: 2151963051
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Items
+        ObjectType: 4
+      Path: Vasily\Items
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Landing
       guid: f1f61e6e4b77204a97fe3aeb1141b4ef
       id: 2548270042
@@ -171,8 +211,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Vasily\Character_Foley\Landing
       maxAttenuation: 30
-      maxDuration: 0.986555
-      minDuration: 0.272601
+      maxDuration: 0.272601
+      minDuration: 0.254057
     - name: Play_Amb_Global_Blend
       guid: 0d1f8138f2471d41938bbf9c227e3c8c
       id: 1345175672
@@ -207,8 +247,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Vasily\Shout_Inhale
       maxAttenuation: 30
-      maxDuration: 0.400143
-      minDuration: 0.268469
+      maxDuration: 0.998688
+      minDuration: 0.998688
     - name: Shout_Shout
       guid: 7346833a3e77e847bae406db044b641e
       id: 1912761094
@@ -235,6 +275,34 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 1
       minDuration: 1
+    - name: ToothExchange_Fail
+      guid: 190503d9fad2bb458fedeb832bb16ef4
+      id: 826597249
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Items
+        ObjectType: 4
+      - ElementName: ToothExchange_Fail
+        ObjectType: 3
+      Path: Vasily\Items\ToothExchange_Fail
+      maxAttenuation: 30
+      maxDuration: 2.246
+      minDuration: 1.782651
+    - name: ToothExchange_Success
+      guid: 29a6e12a2763c24d94e5ea4a21bfa640
+      id: 1293015998
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Items
+        ObjectType: 4
+      - ElementName: ToothExchange_Success
+        ObjectType: 3
+      Path: Vasily\Items\ToothExchange_Success
+      maxAttenuation: 30
+      maxDuration: 4.483955
+      minDuration: 3.558918
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -262,7 +330,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 7e59c2a6490ea743b1ac781b90957e89
     GuidInternal: 
-    m_lastTime: -8585894895675821032
+    m_lastTime: -8585894836630310065
     List:
     - name: Ambince_State
       guid: 5e660d493251104ca57e47ff47cc5250

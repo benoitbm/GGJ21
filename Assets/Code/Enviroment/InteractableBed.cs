@@ -10,6 +10,8 @@ public class InteractableBed : IInteractableObject
     [SerializeField]
     SpriteRenderer m_MinimapCheck;
 
+    [SerializeField]
+    FloatingTooth m_FloatingCoin;
     public void Awake()
     {
         m_MinimapCheck.enabled = false;
@@ -28,10 +30,12 @@ public class InteractableBed : IInteractableObject
             player.RemoveMoney();
             m_ToothCollected = true;
             m_MinimapCheck.enabled = true;
+            AkSoundEngine.PostEvent("ToothExchange_Success", player.gameObject);
+            m_FloatingCoin.PickupTooth();
         }
         else
         {
-            // Warn about the score
+            AkSoundEngine.PostEvent("ToothExchange_Fail", player.gameObject);
         }
     }
 }
