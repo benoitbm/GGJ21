@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     float m_SpeedModifier = 1.0f;
     float m_SpeedModifierTimer = 0.0f;
 
-    bool m_TouchGround;
+    bool m_TouchGround = false;
     bool m_RequestedJump;
 
     [SerializeField, Tooltip("The aimed timescale when slowing down time to charge power")]
@@ -55,9 +55,13 @@ public class PlayerController : MonoBehaviour
     public float GetDashIntensityCharge() { return m_DashIntensity / m_DashMaxIntensity; }
 
     public Vector2 GetVelocity() { return m_Velocity; }
+
+    public bool GetTouchGround() { return m_TouchGround; }
+
+    public bool GetIsJumpRequested() { return m_RequestedJump; }
     #endregion
 
-#region Setters
+    #region Setters
     public void SetSpeedModifier(float speedMult, float timer) { m_SpeedModifier = speedMult; m_SpeedModifierTimer = timer; }
     #endregion
 
