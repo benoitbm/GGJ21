@@ -10,11 +10,11 @@ using System.Windows.Controls;
 namespace GGJ21_UI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Timer.xaml
     /// </summary>
-    public partial class MainWindow : Grid
+    public partial class Timer : UserControl
     {
-        public MainWindow()
+        public Timer()
         {
             this.InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace GGJ21_UI
 #if NOESIS
         private void InitializeComponent()
         {
-            Noesis.GUI.LoadComponent(this, "Assets/UI/MainWindow.xaml");
+            Noesis.GUI.LoadComponent(this, "Assets/UI/Test.xaml");
         }
 #endif
     }
