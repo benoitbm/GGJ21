@@ -27,6 +27,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	604505077	Wwise_Parametric_EQ_(Custom)	Wwise Parametric EQ			
 	987364011	Wwise_Guitar_Distortion_(Custom)	Wwise Guitar Distortion			
+	3487820010	One_Tap_Half_Second	Wwise Delay			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	9263921	Shout2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Shout2_9073DE96.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Shout\Shout2		301640
@@ -36,7 +37,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	131237825	Can1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Can1_85300A95.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Can\Can1		675904
 	209724574	GlassBit4 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit4 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit4 (1)		96064
 	257946923	Charrrrrge	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Charge1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Charge\Charrrrrge		96064
-	261955874	Breath4	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Breath4_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Inhale\Breath4		108064
+	261955874	Breath4	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Breath4_CC16D742.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Inhale\Breath4		104408
 	263683147	Shout3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Shout3_4A5E74C5.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Shout\Shout3		290416
 	361987799	Squeak3Rare	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Squeak3Rare_1F137345.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Squak\Squeak3Rare		991296
 	368970212	FootstepsAmb1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb1_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb1		1920064
@@ -50,7 +51,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	750179482	GlassBit3 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit3 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit3 (1)		96064
 	750572623	Shout1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Shout1_BAA9A14A.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Shout\Shout1		315312
 	853816082	FootstepsAmb3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb3_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb3		1920064
-	928306418	Breath1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Breath1_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Inhale\Breath1		96064
+	928306418	Breath1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Breath1_38F63A3A.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Inhale\Breath1		70072
 	938553613	GlassBreak2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBreak2_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassBreak\GlassBreak2		384064
 	968167697	Squeak1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Squeak1_1F137345.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Squak\Squeak1		991296
 	1023634776	GlassBit2 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit2 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit2 (1)		96064

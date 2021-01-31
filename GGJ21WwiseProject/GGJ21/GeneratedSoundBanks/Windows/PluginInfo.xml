@@ -2,6 +2,7 @@
 <PluginInfo Project="GGJ21" Platform="Windows" BasePlatform="Windows">
 	<Plugins>
 		<Plugin Name="Wwise Parametric EQ" ID="6881283" DLL="AkParametricEQ"/>
+		<Plugin Name="Wwise Delay" ID="6946819" DLL="AkDelay"/>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb"/>
 		<Plugin Name="Wwise Guitar Distortion" ID="8257539" DLL="AkGuitarDistortion"/>
 		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>

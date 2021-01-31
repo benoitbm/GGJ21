@@ -1016,6 +1016,39 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Shout" ID="{DF4DC167-7F9D-452B-8697-F3820A3CD7FC}" ShortID="269884344">
 							<PropertyList>
+								<Property Name="BypassEffect1" Type="bool">
+									<RTPCList>
+										<RTPC Name="" ID="{3FB35F43-F6C5-47F9-8063-FEEDCC44A819}" ShortID="972511578">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Shout_Charge" ID="{2F1E4A97-21EB-4C19-BEB0-904D25CA68AF}" WorkUnitID="{435C9060-61DF-4BA7-99F5-081188DE515B}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{AA2AA0E1-FCB3-4E71-89DD-7632992D587D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>1</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>75.80069</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="Highpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{1E21451B-EE30-4AF1-BE4A-79CC493774F3}" ShortID="285479737">
@@ -1088,7 +1121,7 @@
 													</Point>
 													<Point>
 														<XPos>100</XPos>
-														<YPos>300</YPos>
+														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -1138,11 +1171,10 @@
 																		<XPos>0</XPos>
 																		<YPos>0</YPos>
 																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>60</YPos>
+																		<YPos>30</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -1150,6 +1182,22 @@
 														</RTPC>
 													</RTPCList>
 												</Property>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<ObjectRef Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{CD6A1287-790D-4DF6-9666-DC32D6A981B1}" ShortID="689192237" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand2" Type="Real32" Value="10351"/>
+												<Property Name="GainBand2" Type="Real32" Value="-6"/>
+												<Property Name="OnOffBand1" Type="bool" Value="False"/>
+												<Property Name="OnOffBand3" Type="bool" Value="False"/>
+												<Property Name="QFactorBand2" Type="Real32" Value="75.9"/>
 											</PropertyList>
 										</Effect>
 									</Custom>
@@ -1247,12 +1295,12 @@
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
-										<Value>24</Value>
+										<Value>12</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>250</Value>
+										<Value>530</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -1291,6 +1339,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Breath1" ID="{07CAEC48-4484-40EA-8017-11625819CA58}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0201668984700974"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.135373203523412"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX\Breath1.wav</AudioFile>
 											<MediaIDList>
@@ -1303,6 +1356,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Breath2" ID="{E99673E6-2CF1-485E-82FD-EB4DF6EE57E5}" ShortID="298184521">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>250</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
@@ -1357,6 +1417,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Breath4" ID="{68BF4087-1F4C-470A-92E2-C0E100097532}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0135605006954103"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0190368567454798"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX\Breath4.wav</AudioFile>
 											<MediaIDList>
@@ -1419,10 +1484,11 @@
 														<XPos>0</XPos>
 														<YPos>0</YPos>
 														<Flags>5</Flags>
+														<SegmentShape>Exp1</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>100</XPos>
-														<YPos>1000</YPos>
+														<YPos>600</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>

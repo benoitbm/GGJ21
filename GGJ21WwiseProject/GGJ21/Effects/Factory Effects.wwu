@@ -129,7 +129,72 @@
 							</PropertyList>
 						</Effect>
 						<Effect Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
-						<Effect Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
+						<Effect Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+							<PropertyList>
+								<Property Name="FeedbackEnabled" Type="bool">
+									<RTPCList>
+										<RTPC Name="" ID="{437E5D3A-5963-45E6-AA6A-28182A64EA1C}" ShortID="520580793">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Shout_Charge" ID="{2F1E4A97-21EB-4C19-BEB0-904D25CA68AF}" WorkUnitID="{435C9060-61DF-4BA7-99F5-081188DE515B}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{0A196A14-F853-4B80-BF04-A85FCD967ED3}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>1</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>69.90291</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>1</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="WetDryMix" Type="Real32" Value="0">
+									<RTPCList>
+										<RTPC Name="" ID="{939609D0-6494-4572-9973-70C360F0A50F}" ShortID="664910395">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Shout_Charge" ID="{2F1E4A97-21EB-4C19-BEB0-904D25CA68AF}" WorkUnitID="{435C9060-61DF-4BA7-99F5-081188DE515B}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{C44FB776-DE75-4961-9036-62C9F1F5B673}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>15</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+						</Effect>
 						<Effect Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
 								<Property Name="DelayTime" Type="Real32" Value="0.25"/>
