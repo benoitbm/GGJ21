@@ -12,11 +12,19 @@
         <StackPanel Orientation="Vertical" Margin="50,50,0,0">
             <StackPanel Orientation="Horizontal">
                 <Image Source="pack://application:,,,/GGJ21-UI;component/Assets/UI/Assets/CharacterResources/tooth.png" Stretch="Uniform" Width="60" Height="50" />
-                <TextBlock Margin="12,0,0,0" Text="{Binding Score}" VerticalAlignment="Center" Foreground="White" FontSize="32" Background="Transparent"/>
+                <TextBlock Margin="12,0,0,0" Text="{Binding Score}" VerticalAlignment="Center" Foreground="White" FontSize="32" Background="Transparent">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Black" BlurRadius="2"/>
+                    </TextBlock.Effect>
+                </TextBlock>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
                 <Image Source="pack://application:,,,/GGJ21-UI;component/Assets/UI/Assets/CharacterResources/coin.png" Stretch="Uniform" Height="50" Width="60" />
-                <TextBlock Margin="12,0,0,0" Text="{Binding Money}" VerticalAlignment="Center" Foreground="White" FontSize="32" Background="Transparent"/>
+                <TextBlock Margin="12,0,0,0" Text="{Binding Money}" VerticalAlignment="Center" Foreground="White" FontSize="32" Background="Transparent">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="Black" BlurRadius="2"/>
+                    </TextBlock.Effect>
+                </TextBlock>
             </StackPanel>
         </StackPanel>
     </Grid>
