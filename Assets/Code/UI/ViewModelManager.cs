@@ -49,6 +49,10 @@ public class ViewModelManager : MonoBehaviour
                     newWidget = gameObject.AddComponent(typeof(DCMinimap)) as DCWidget;
                     break;
 
+                case gui.EWidgetType.Timer:
+                    newWidget = gameObject.AddComponent(typeof(DCTimer)) as DCWidget;
+                    break;
+
                 default:
                 case gui.EWidgetType.MAX:
                     Debug.LogError("Widget type not recognized !");

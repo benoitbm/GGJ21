@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="GGJ21_UI.Timer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GGJ21_UI"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0">
+            <Grid>
+                <Ellipse Width="72" Height="72" Fill="Gray" VerticalAlignment="Center"/>
+                <Grid RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="{Binding Angle}"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Ellipse Width="64" Height="64" Fill="White" VerticalAlignment="Center"/>
+                    <Ellipse Width="6" Height="32" Fill="Red" VerticalAlignment="Center" Margin="33,4,33,36"/>
+                </Grid>
+            </Grid>
+            <TextBlock FontSize="48" Foreground="White" Margin="15,0,0,0" VerticalAlignment="Center" Width="250">
+                <Run Text="{Binding Minutes, StringFormat='D2'}"/>
+                <Run Text=":"/>
+                <Run Text="{Binding Seconds, StringFormat='D2'}"/>
+                <Run Text=":"/>
+                <Run Text="{Binding Milliseconds, StringFormat='D2'}"/>
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="Black" BlurRadius="2"/>
+                </TextBlock.Effect>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

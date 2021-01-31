@@ -32,6 +32,8 @@ public class PlayerResources : MonoBehaviour
     {
         m_DC = (DCCharacterResources)FindObjectOfType<ViewModelManager>().GetComponent<ViewModelManager>().CreateWidget(gui.EWidgetType.CharacterResources);
         RefillMoney();
+
+        FindObjectOfType<GameMaster>().GetComponent<GameMaster>().RequestGameTimer(false);
     }
 #endregion
 
