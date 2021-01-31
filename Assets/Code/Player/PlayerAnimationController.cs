@@ -67,7 +67,6 @@ public class PlayerAnimationController : MonoBehaviour
         //Screaming
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Set Chargin");
             animator.SetTrigger("Charging");
         }
     }

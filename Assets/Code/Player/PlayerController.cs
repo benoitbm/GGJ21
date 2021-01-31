@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     float m_SpeedModifier = 1.0f;
     float m_SpeedModifierTimer = 0.0f;
 
-    bool m_TouchGround = false;
+    bool m_TouchGround;
     bool m_RequestedJump;
 
     [SerializeField, Tooltip("The aimed timescale when slowing down time to charge power")]
@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     Vector2 m_DashDirection;
     float m_DashIntensity;
     bool m_IsAiming;
+
+    Vector3 m_PreviousFramePosition;
 
     [SerializeField, Tooltip("The maximum power intensity when dashing")]
     float m_DashMaxIntensity = 20.0f;
@@ -172,6 +174,16 @@ public class PlayerController : MonoBehaviour
                     m_TouchGround = true;
                 }
             }
+        }
+        //Stopping Velocity if hit something while in air
+        if(!m_TouchGround)
+        {
+            Vector3 changeInPosition = m_PreviousFramePosition - transform.position;
+            if (changeInPosition == Vector3.zero)
+            {
+                m_Velocity = Vector2.zero;
+            }
+            m_PreviousFramePosition = transform.position;
         }
 
         // Physics update was done, we can clear the jump flag.

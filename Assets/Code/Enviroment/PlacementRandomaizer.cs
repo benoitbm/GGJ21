@@ -45,7 +45,7 @@ public class PlacementRandomaizer : MonoBehaviour
             float randomRange = Random.Range(0, 100);
             if(randomRange > chanceToShow)
             {
-                Destroy(this);
+                Destroy(gameObject);
             }
         }
     }
