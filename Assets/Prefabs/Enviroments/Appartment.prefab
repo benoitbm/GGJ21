@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 833162587683409006}
   - component: {fileID: 833162587683409005}
   - component: {fileID: 1896201379}
+  - component: {fileID: 824611116}
   m_Layer: 10
   m_Name: Appartment
   m_TagString: Appartment
@@ -485,6 +486,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appartmentCover: {fileID: 2165511261225630808}
+--- !u!61 &824611116
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833162587683409011}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.233412, y: 0.22998333}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.24, y: 5.12}
+    newSize: {x: 10.24, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.4944386, y: 4.0190372}
+  m_EdgeRadius: 0
 --- !u!1 &2324751642755210741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,11 +1293,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2724935730015771816, guid: 841c063b404e7d741ba65f909e332769, type: 3}
       propertyPath: m_SortingLayer
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2724935730015771816, guid: 841c063b404e7d741ba65f909e332769, type: 3}
       propertyPath: m_SortingLayerID
-      value: -694623085
+      value: 166325549
       objectReference: {fileID: 0}
     - target: {fileID: 2724935730015771817, guid: 841c063b404e7d741ba65f909e332769, type: 3}
       propertyPath: m_RootOrder
@@ -1348,11 +1375,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2724935730015771816, guid: 841c063b404e7d741ba65f909e332769, type: 3}
       propertyPath: m_SortingLayer
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2724935730015771816, guid: 841c063b404e7d741ba65f909e332769, type: 3}
       propertyPath: m_SortingLayerID
-      value: -694623085
+      value: 166325549
       objectReference: {fileID: 0}
     - target: {fileID: 2724935730015771817, guid: 841c063b404e7d741ba65f909e332769, type: 3}
       propertyPath: m_RootOrder
