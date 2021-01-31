@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    #region Members
     [SerializeField, Tooltip("Max speed, in units per second, that the character moves.")]
     float m_Speed = 9;
 
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     float m_JumpHeight = 8;
 
     BoxCollider2D m_PlayerCollider;
+    PlayerInteractions m_PlayerInteractions;
 
     Vector2 m_Velocity;
     float m_SpeedModifier = 1.0f;
@@ -43,21 +45,32 @@ public class PlayerController : MonoBehaviour
     [SerializeField, Range(1,100), Tooltip("The minimum required percentage to trigger a dash")]
     int m_RequiredPercentageToDash = 20;
 
+    #endregion
+
+#region Getters
+    
     public Vector2 GetDashDirection() { return m_DashDirection; }
     public bool IsAiming() { return m_IsAiming; }
 
     public float GetDashIntensityCharge() { return m_DashIntensity / m_DashMaxIntensity; }
 
-    public void SetSpeedModifier(float speedMult, float timer) { m_SpeedModifier = speedMult; m_SpeedModifierTimer = timer; }
-
     public Vector2 GetVelocity() { return m_Velocity; }
+    #endregion
 
+#region Setters
+    public void SetSpeedModifier(float speedMult, float timer) { m_SpeedModifier = speedMult; m_SpeedModifierTimer = timer; }
+    #endregion
+
+#region Inits
     // Start is called before the first frame update
     void Start()
     {
         m_PlayerCollider = GetComponent<BoxCollider2D>();
+        m_PlayerInteractions = GetComponent<PlayerInteractions>();
     }
+#endregion
 
+#region Updates
     private void Update()
     {
         if (Input.GetMouseButton(0) || Mathf.Abs(Input.GetAxisRaw("Aim")) >= 0.2)
@@ -123,12 +136,19 @@ public class PlayerController : MonoBehaviour
 
         // Hit detection part
         m_TouchGround = false;
+        m_PlayerInteractions.ClearInteraction();
 
         Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, m_PlayerCollider.size, 0, ~(LayerMask.GetMask("Glass"))); 
         foreach (Collider2D hit in hits)
         {
             if (hit == m_PlayerCollider)
                 continue;
+
+            if (hit.isTrigger)
+            {
+                m_PlayerInteractions.InteractivityCheck(hit);
+                continue;
+            }
 
             if (hit.GetComponent<GlassWindow>())
             {
@@ -153,7 +173,7 @@ public class PlayerController : MonoBehaviour
         // Physics update was done, we can clear the jump flag.
         m_RequestedJump = false;
     }
-
+#endregion
 
     private void CaptureMouse()
     {
