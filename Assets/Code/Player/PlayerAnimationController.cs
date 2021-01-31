@@ -55,20 +55,23 @@ public class PlayerAnimationController : MonoBehaviour
         //Jumping
         bool isTrouchGround = playerContoller.GetTouchGround();
         animator.SetBool("IsTouchingGround", isTrouchGround);
-
-        if(isTrouchGround && playerContoller.GetIsJumpRequested())
-        {
-            animator.SetTrigger("Jumping");
-        }
-
     }
     void Update()
     {
-        //Screaming
+        //Charing 
         if (Input.GetMouseButtonDown(0))
         {
             animator.SetTrigger("Charging");
         }
+    }
+    public void OnPlayerJump()
+    {
+        animator.SetTrigger("Jumping");
+    }
+
+    public void OnPlayerHurt(bool isDamageApplyed)
+    {
+        animator.SetTrigger("Hurt");
     }
 }
 

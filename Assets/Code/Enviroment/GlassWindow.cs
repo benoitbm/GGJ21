@@ -10,6 +10,8 @@ public class GlassWindow : MonoBehaviour
     public float m_SpeedToBreakWindow = 3f;
     public float m_ScreenShakeDuration = 0.1f;
     public float m_ScreenShakeAmount = 0.08f;
+    private bool m_destroyed = false;
+    public bool GetIsDestroyed() { return m_destroyed; }
     public void PlayerImpact(GameObject player)
     {
         Transform playerTransform = player.GetComponent<Transform>();
@@ -23,11 +25,15 @@ public class GlassWindow : MonoBehaviour
             ScreenShake screenshake = Camera.main.GetComponent<ScreenShake>();
             screenshake.shakeAmount = m_ScreenShakeAmount;
             screenshake.shakeDuration = m_ScreenShakeDuration;
+
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+            playerHealth.GetHurt(false);
         }
     }
 
     private void Break(Vector2 moveSpeed, Transform playerTransform)
     {
+        m_destroyed = true;
         Appartment appartment = transform.parent.GetComponentInParent<Appartment>();
         if (appartment)
         {
@@ -36,7 +42,7 @@ public class GlassWindow : MonoBehaviour
 
         Destroy(gameObject.GetComponent<BoxCollider2D>());
         Destroy(gameObject.GetComponent<SpriteRenderer>());
-
+        
         //Enable the breaking object 
         foreach (Transform child in transform)
         {

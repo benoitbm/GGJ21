@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     BoxCollider2D m_PlayerCollider;
     PlayerInteractions m_PlayerInteractions;
+    PlayerAnimationController m_PlayerAnimationController;
 
     Vector2 m_Velocity;
     float m_SpeedModifier = 1.0f;
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
     Vector2 m_DashDirection;
     float m_DashIntensity;
     bool m_IsAiming;
+
 
     Vector3 m_PreviousFramePosition;
 
@@ -73,6 +75,7 @@ public class PlayerController : MonoBehaviour
     {
         m_PlayerCollider = GetComponent<BoxCollider2D>();
         m_PlayerInteractions = GetComponent<PlayerInteractions>();
+        m_PlayerAnimationController = GetComponentInChildren<PlayerAnimationController>();
     }
 #endregion
 
@@ -124,6 +127,7 @@ public class PlayerController : MonoBehaviour
             if (m_RequestedJump)
             {
                 m_Velocity.y = Mathf.Sqrt(m_JumpHeight * Mathf.Abs(Physics2D.gravity.y));
+                m_PlayerAnimationController.OnPlayerJump();
             }
         }
 
@@ -159,7 +163,10 @@ public class PlayerController : MonoBehaviour
             if (hit.GetComponent<GlassWindow>())
             {
                 GlassWindow window = hit.GetComponent<GlassWindow>();
-                window.PlayerImpact(gameObject);
+                if(!window.GetIsDestroyed())
+                {
+                    window.PlayerImpact(gameObject);
+                }
             }
 
             ColliderDistance2D hitDistance = hit.Distance(m_PlayerCollider);
