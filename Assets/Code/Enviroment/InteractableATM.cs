@@ -6,8 +6,6 @@ public class InteractableATM : IInteractableObject
 {
     public override void Interact(PlayerResources player) 
     {
-        player.RefillMoney();
-
         if(player.GetCurrentMoney() < 3)
         {
             AkSoundEngine.PostEvent("ATM_Use", player.gameObject);
@@ -16,5 +14,6 @@ public class InteractableATM : IInteractableObject
         {
             AkSoundEngine.PostEvent("ATM_PlayerFull", player.gameObject);
         }
+        player.RefillMoney();
     }
 }

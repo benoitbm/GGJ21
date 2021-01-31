@@ -60,6 +60,9 @@ TagManager:
   - name: Background 5
     uniqueID: 166325549
     locked: 0
+  - name: Background 6
+    uniqueID: 715691713
+    locked: 0
   - name: Player
     uniqueID: 923096569
     locked: 0

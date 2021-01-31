@@ -55,13 +55,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{861248D2-E5CB-4D49-83A8-C6FFF2A972A1}" ShortID="781327567">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Slowtime" ID="{13502008-CB4E-4177-9FCA-89A3C95EB586}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Shout_Charge" ID="{C313F710-6320-4F2D-8BA0-CAADD82EEE7F}">

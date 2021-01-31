@@ -79,7 +79,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	968167697	Squeak1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Squeak1_1F137345.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Squak\Squeak1		991296
 	1023634776	GlassBit2 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit2 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit2 (1)		96064
 	1023831991	Can3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Can3_85300A95.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Can\Can3		675904
-	1037875941	Slowtime	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\Slowtime_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\SoutMaster\Slowtime		191812
 	1064096417	Squeak2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Squeak2_1F137345.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Squak\Squeak2		991296
 	1073439711	Swoosh1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\CharacterFoley\Swoosh1_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\Character Foley\Swhoosh\Swoosh1		192064
 
