@@ -5,7 +5,15 @@ using UnityEngine;
 public class InteractableBed : IInteractableObject
 {
     [SerializeField, Tooltip("Bool about if the tooth was already gained, showed in editor for testing purposes")]
-    bool m_ToothCollected = false;   
+    bool m_ToothCollected = false;
+
+    [SerializeField]
+    SpriteRenderer m_MinimapCheck;
+
+    public void Awake()
+    {
+        m_MinimapCheck.enabled = false;
+    }
 
     public override bool CanBeInteracted()
     {
@@ -19,6 +27,7 @@ public class InteractableBed : IInteractableObject
             player.IncreaseScore();
             player.RemoveMoney();
             m_ToothCollected = true;
+            m_MinimapCheck.enabled = true;
         }
         else
         {
