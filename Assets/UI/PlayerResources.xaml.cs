@@ -1,6 +1,6 @@
 ﻿#if UNITY_5_3_OR_NEWER
 #define NOESIS
-   using Noesis;
+using Noesis;
 #else
 using System;
 using System.Windows;
@@ -10,11 +10,11 @@ using System.Windows.Controls;
 namespace GGJ21_UI
 {
     /// <summary>
-    /// Interaction logic for Test.xaml
+    /// Interaction logic for PlayerResources.xaml
     /// </summary>
-    public partial class Test : UserControl
+    public partial class PlayerResources : UserControl
     {
-        public Test()
+        public PlayerResources()
         {
             this.InitializeComponent();
         }

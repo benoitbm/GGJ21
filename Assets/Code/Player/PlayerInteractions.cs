@@ -18,7 +18,7 @@ public class PlayerInteractions : MonoBehaviour
     {
         bool canInteract = m_InteractAvailable && m_InteractibleObject && m_InteractibleObject.CanBeInteracted();
         m_PromptBackground.SetActive(canInteract);
-        if (Input.GetButtonDown("Interact"))
+        if (canInteract && Input.GetButtonDown("Interact"))
         {
             m_InteractibleObject.Interact(GetComponent<PlayerResources>());
         }
