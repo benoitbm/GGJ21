@@ -41,18 +41,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Sky
+  - name: Background 0
     uniqueID: 256406153
     locked: 0
-  - name: Background
+  - name: Background 1
     uniqueID: 3604767885
     locked: 0
-  - name: Foreground
+  - name: Background 2
     uniqueID: 294012817
+    locked: 0
+  - name: Background 3
+    uniqueID: 3096283439
     locked: 0
   - name: Player
     uniqueID: 923096569
     locked: 0
-  - name: Collectables
+  - name: Foreground 0
+    uniqueID: 3600344211
+    locked: 0
+  - name: Promot 1
     uniqueID: 4019952529
+    locked: 0
+  - name: Promot 2
+    uniqueID: 1385418129
     locked: 0

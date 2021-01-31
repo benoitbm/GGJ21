@@ -45,8 +45,7 @@ public class PlacementRandomaizer : MonoBehaviour
             float randomRange = Random.Range(0, 100);
             if(randomRange > chanceToShow)
             {
-                SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-                spriteRenderer.enabled = false;
+                Destroy(this);
             }
         }
     }
