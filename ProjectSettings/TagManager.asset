@@ -14,7 +14,7 @@ TagManager:
   - 
   - Player
   - Glass
-  - 
+  - Background
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sky
+    uniqueID: 256406153
+    locked: 0
+  - name: Background
+    uniqueID: 3604767885
+    locked: 0
+  - name: Foreground
+    uniqueID: 294012817
+    locked: 0
+  - name: Player
+    uniqueID: 923096569
+    locked: 0
+  - name: Collectables
+    uniqueID: 4019952529
     locked: 0
