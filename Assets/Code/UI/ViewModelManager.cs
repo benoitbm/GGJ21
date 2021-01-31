@@ -17,6 +17,8 @@ namespace gui
         Options,
         LoadingScreen,
 
+        Results,
+
         MAX
     };
 }
@@ -29,7 +31,7 @@ public class ViewModelManager : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(this);
-        Debug.Assert((int)gui.EWidgetType.MAX == 8, "New widget type added, it needs to be added");
+        Debug.Assert((int)gui.EWidgetType.MAX == 9, "New widget type added, it needs to be added");
         LoadedWidgets = new Dictionary<gui.EWidgetType, DCWidget>();
         NewWidgets = new List<DCWidget>();
     }
@@ -51,6 +53,10 @@ public class ViewModelManager : MonoBehaviour
 
                 case gui.EWidgetType.Timer:
                     newWidget = gameObject.AddComponent(typeof(DCTimer)) as DCWidget;
+                    break;
+
+                case gui.EWidgetType.Results:
+                    newWidget = gameObject.AddComponent(typeof(DCResults)) as DCWidget;
                     break;
 
                 default:
@@ -93,6 +99,9 @@ public class ViewModelManager : MonoBehaviour
     {
         if (NewWidgets.Count > 0)
         {
+            if (!Camera.main)
+                return;
+
             NoesisView noesisView = Camera.main.GetComponent<NoesisView>();
             if (!noesisView)
                 return;

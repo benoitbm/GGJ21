@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 public class DCWidget : MonoBehaviour
 {
-    protected string m_AssetPath = "Assets/UI/";
+    protected string m_AssetPath = "UI/";
     protected Noesis.UserControl m_DC;
     protected NoesisView m_View;
 
@@ -23,7 +24,8 @@ public class DCWidget : MonoBehaviour
     {
         m_View = panel;
         Noesis.Grid root = (Noesis.Grid)panel.Content.FindName("ContentRoot");
-        m_DC = (Noesis.UserControl)Noesis.GUI.LoadXaml(m_AssetPath + GetFileName());
+        NoesisXaml xaml = (NoesisXaml)UnityEngine.Resources.Load(m_AssetPath + GetFileName(), typeof(NoesisXaml));
+        m_DC = (Noesis.UserControl)xaml.Load();
         root.Children.Add(m_DC);
         m_DC.DataContext = this;
     }
