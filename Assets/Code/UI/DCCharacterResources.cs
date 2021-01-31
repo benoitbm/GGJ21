@@ -14,12 +14,6 @@ public class DCCharacterResources : DCWidget, INotifyPropertyChanged
     protected override string GetFileName() { return "PlayerResources.xaml"; }
     #endregion
 
-    public override void Initialize(NoesisView panel)
-    {
-        base.Initialize(panel);
-        m_DC.DataContext = this;
-    }
-
     #region Setters
     public void SetScore(int newScore)
     {

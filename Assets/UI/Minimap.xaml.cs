@@ -10,11 +10,11 @@ using System.Windows.Controls;
 namespace GGJ21_UI
 {
     /// <summary>
-    /// Interaction logic for UserControl1.xaml
+    /// Interaction logic for Minimap.xaml
     /// </summary>
-    public partial class UserControl1 : UserControl
+    public partial class Minimap : UserControl
     {
-        public UserControl1()
+        public Minimap()
         {
             this.InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace GGJ21_UI
 #if NOESIS
         private void InitializeComponent()
         {
-            Noesis.GUI.LoadComponent(this, "Assets/UI/UserControl1.xaml");
+            Noesis.GUI.LoadComponent(this, "Assets/UI/Minimap.xaml");
         }
 #endif
     }

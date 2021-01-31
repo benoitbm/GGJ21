@@ -43,7 +43,10 @@ public class ViewModelManager : MonoBehaviour
             {
                 case gui.EWidgetType.CharacterResources:
                     newWidget = gameObject.AddComponent(typeof(DCCharacterResources)) as DCWidget;
-                    LoadedWidgets.Add(widgetType, newWidget);
+                    break;
+
+                case gui.EWidgetType.Minimap:
+                    newWidget = gameObject.AddComponent(typeof(DCMinimap)) as DCWidget;
                     break;
 
                 default:
@@ -52,6 +55,7 @@ public class ViewModelManager : MonoBehaviour
                     return null;
             }
 
+            LoadedWidgets.Add(widgetType, newWidget);
             NewWidgets.Add(newWidget);
             return newWidget;
         }
