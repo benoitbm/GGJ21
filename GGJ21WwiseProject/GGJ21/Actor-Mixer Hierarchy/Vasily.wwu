@@ -1016,6 +1016,35 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Shout" ID="{DF4DC167-7F9D-452B-8697-F3820A3CD7FC}" ShortID="269884344">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{1E21451B-EE30-4AF1-BE4A-79CC493774F3}" ShortID="285479737">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Shout_Charge" ID="{2F1E4A97-21EB-4C19-BEB0-904D25CA68AF}" WorkUnitID="{435C9060-61DF-4BA7-99F5-081188DE515B}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{620787A8-1B7C-4A1E-A355-0D4ED31199BE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>15</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ModifierList>
 										<ModifierInfo>
@@ -1028,6 +1057,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -1039,6 +1069,32 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+									<RTPCList>
+										<RTPC Name="" ID="{441EAF50-95D2-48F4-8AF9-C0C07CCA27C3}" ShortID="627847007">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Shout_Charge" ID="{2F1E4A97-21EB-4C19-BEB0-904D25CA68AF}" WorkUnitID="{435C9060-61DF-4BA7-99F5-081188DE515B}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{38E9F2B3-F35F-4027-84AA-28C0728CA475}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>300</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -1049,6 +1105,54 @@
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{D3A9679E-0566-4C5A-A07C-A84CB2B25E53}" ShortID="987364011" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionDrive" Type="Real32" Value="43"/>
+												<Property Name="DistortionType" Type="int32" Value="2"/>
+												<Property Name="OutputLevel" Type="Real32" Value="-2"/>
+												<Property Name="PreEQBand1Enable" Type="bool" Value="True"/>
+												<Property Name="PreEQBand1FilterType" Type="int32" Value="4"/>
+												<Property Name="PreEQBand1Frequency" Type="Real32" Value="175"/>
+												<Property Name="PreEQBand1Gain" Type="Real32" Value="-48"/>
+												<Property Name="PreEQBand3Enable" Type="bool" Value="True"/>
+												<Property Name="PreEQBand3FilterType" Type="int32" Value="3"/>
+												<Property Name="PreEQBand3Frequency" Type="Real32" Value="9684"/>
+												<Property Name="Rectification" Type="Real32" Value="80"/>
+												<Property Name="WetDryMix" Type="Real32" Value="0">
+													<RTPCList>
+														<RTPC Name="" ID="{F0ED72F1-9C19-48FA-A668-0328E7A23D8D}" ShortID="804978887">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Shout_Charge" ID="{2F1E4A97-21EB-4C19-BEB0-904D25CA68AF}" WorkUnitID="{435C9060-61DF-4BA7-99F5-081188DE515B}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{FDC820AE-C3E9-4B86-9A6D-A53227D1E179}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>60</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
@@ -1163,7 +1267,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>4</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1267,9 +1371,110 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Charge" ID="{E6018927-D740-4911-B9CC-ACD79B227E13}" ShortID="840773710">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{8DE2CD3C-5343-4EF8-8775-7B714E7C74DC}" ShortID="225124175">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Shout_Charge" ID="{2F1E4A97-21EB-4C19-BEB0-904D25CA68AF}" WorkUnitID="{435C9060-61DF-4BA7-99F5-081188DE515B}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{ECE696A5-D61F-4A0C-A8A0-E5504079BB1E}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>20</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{5A88513B-19B6-481B-9864-A50D74C444B6}" ShortID="952172937">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Shout_Charge" ID="{2F1E4A97-21EB-4C19-BEB0-904D25CA68AF}" WorkUnitID="{435C9060-61DF-4BA7-99F5-081188DE515B}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{023F5B71-8A7F-4F06-AD13-541E94881139}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>1000</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{34AE1649-3373-44C2-8AE8-BBFC7BC7BF15}" ShortID="604505077" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FilterTypeBand1" Type="int32" Value="3"/>
+												<Property Name="FrequencyBand1" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{80E0009E-FE44-4A5A-97AE-88558F6723DB}" ShortID="440222648">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Shout_Charge" ID="{2F1E4A97-21EB-4C19-BEB0-904D25CA68AF}" WorkUnitID="{435C9060-61DF-4BA7-99F5-081188DE515B}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{2DED6C7A-FBED-4647-B60C-DD8D129CBCE4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="5"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>100</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>15000</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OnOffBand2" Type="bool" Value="False"/>
+												<Property Name="OnOffBand3" Type="bool" Value="False"/>
+												<Property Name="QFactorBand1" Type="Real32" Value="1.6"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>

@@ -20,12 +20,12 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2271422591">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3769771170">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1634528718">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3549065272">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -159,15 +159,15 @@
 					<IncludedMemoryFiles>
 						<File Id="9263921" Language="SFX">
 							<ShortName>SFX\Shout2.wav</ShortName>
-							<Path>SFX\SFX\Shout2_C084F823.wem</Path>
+							<Path>SFX\SFX\Shout2_9073DE96.wem</Path>
 						</File>
 						<File Id="263683147" Language="SFX">
 							<ShortName>SFX\Shout3.wav</ShortName>
-							<Path>SFX\SFX\Shout3_94FBDAE7.wem</Path>
+							<Path>SFX\SFX\Shout3_4A5E74C5.wem</Path>
 						</File>
 						<File Id="750572623" Language="SFX">
 							<ShortName>SFX\Shout1.wav</ShortName>
-							<Path>SFX\SFX\Shout1_897F2735.wem</Path>
+							<Path>SFX\SFX\Shout1_BAA9A14A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -180,6 +180,9 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3582693563" Name="Shout_Charge" ObjectPath="\Game Parameters\Default Work Unit\Shout_Charge"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

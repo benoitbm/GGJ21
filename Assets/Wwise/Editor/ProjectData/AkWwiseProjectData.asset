@@ -107,7 +107,7 @@ MonoBehaviour:
     ParentPath: Vasily
     guid: 92c7119a19e7c44d916603d058e1cd1e
     GuidInternal: 
-    m_lastTime: -8585894910215806735
+    m_lastTime: -8585894902739596434
     List:
     - name: GlassBreak
       guid: 9478faf2e888d24983e442b72f62a1f6
@@ -120,7 +120,7 @@ MonoBehaviour:
       Path: Vasily\GlassBreak
       maxAttenuation: 30
       maxDuration: 4.621312
-      minDuration: 2.747849
+      minDuration: 1.498307
     - name: GlassShard
       guid: d4c7a221320d3d40a0700d3af547f77f
       id: 3627491425
@@ -189,7 +189,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 60905c43df61a74b99f5081188de515b
     GuidInternal: 
-    m_lastTime: -8585894912287104802
+    m_lastTime: -8585894902739461312
     List:
     - name: Shout_Charge
       guid: 974a1e2feb21194cbeb0904d25ca68af

@@ -205,6 +205,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &67884845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5651862435725585277, guid: ef086f904e3d93e47ae642196a7e94a7, type: 3}
+  m_PrefabInstance: {fileID: 661396713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &67884846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67884845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e8feb93c2bf934e95be8132e34301e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &81855138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,7 +1603,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2025378250, guid: ef086f904e3d93e47ae642196a7e94a7, type: 3}
   m_PrefabInstance: {fileID: 661396713}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &269837788
+--- !u!114 &269837791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3876,23 +3893,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &660194373 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1548832522, guid: ef086f904e3d93e47ae642196a7e94a7, type: 3}
-  m_PrefabInstance: {fileID: 661396713}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &660194374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660194373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9e8feb93c2bf934e95be8132e34301e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &661396713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11493,7 +11493,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1655994117, guid: ef086f904e3d93e47ae642196a7e94a7, type: 3}
   m_PrefabInstance: {fileID: 661396713}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 67884845}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 730a5c3c6f9591d438e0ec7ffa1b6d9e, type: 3}

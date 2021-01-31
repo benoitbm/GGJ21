@@ -22,13 +22,13 @@ public class ScreamingSound : MonoBehaviour
 
         if (playerController.IsAiming())
         {
-            AkSoundEngine.SetRTPCValue("", playerController.GetDashIntensityCharge());
+            AkSoundEngine.SetRTPCValue("Shout_Charge", playerController.GetDashIntensityCharge()*100f);
             Debug.Log(playerController.GetDashIntensityCharge());
-        }
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            AkSoundEngine.PostEvent("Shout_Shout", gameObject);
+            if (Input.GetMouseButtonUp(0))
+            {
+                AkSoundEngine.PostEvent("Shout_Shout", gameObject);
+            }
         }
     }
 }

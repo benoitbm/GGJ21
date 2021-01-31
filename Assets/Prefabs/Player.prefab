@@ -1349,6 +1349,7 @@ GameObject:
   - component: {fileID: 1857757201}
   - component: {fileID: 67884846}
   - component: {fileID: 67884847}
+  - component: {fileID: 6695253764424542124}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -1498,3 +1499,15 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &6695253764424542124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5651862435725585277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e8feb93c2bf934e95be8132e34301e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
