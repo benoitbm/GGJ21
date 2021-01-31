@@ -11,6 +11,8 @@ public class PlayerResources : MonoBehaviour
 
     // Number of teeth collected
     int m_Score = 0;
+
+    DCCharacterResources m_DC;
     #endregion
 
     #region Getters
@@ -19,16 +21,17 @@ public class PlayerResources : MonoBehaviour
     #endregion
 
 #region Setters
-    public void RefillMoney() { m_CurrentMoney = m_MaximumMoney; }
-    public void RemoveMoney(int delta = 1) { m_CurrentMoney -= delta; }
-    public void IncreaseScore(int delta = 1) { m_Score += delta; }
+    public void RefillMoney() { m_CurrentMoney = m_MaximumMoney; m_DC.SetMoney(m_CurrentMoney); }
+    public void RemoveMoney(int delta = 1) { m_CurrentMoney -= delta; m_DC.SetMoney(m_CurrentMoney); }
+    public void IncreaseScore(int delta = 1) { m_Score += delta; m_DC.SetScore(m_Score); }
     #endregion
 
 #region Init
     // Start is called before the first frame update
     void Start()
     {
-        m_CurrentMoney = m_MaximumMoney;
+        m_DC = (DCCharacterResources)FindObjectOfType<ViewModelManager>().GetComponent<ViewModelManager>().CreateWidget(gui.EWidgetType.CharacterResources);
+        RefillMoney();
     }
 #endregion
 
