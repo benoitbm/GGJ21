@@ -1598,11 +1598,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3707620590145087977, guid: 36de8b27338b6d34e90f1bdd25b7f1ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.09
+      value: 7.05
       objectReference: {fileID: 0}
     - target: {fileID: 3707620590145087977, guid: 36de8b27338b6d34e90f1bdd25b7f1ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.8661385
+      value: -1.73
       objectReference: {fileID: 0}
     - target: {fileID: 3707620590145087977, guid: 36de8b27338b6d34e90f1bdd25b7f1ff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2860,6 +2860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 565433401}
   - component: {fileID: 565433400}
+  - component: {fileID: 565433402}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -2907,6 +2908,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &565433402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565433399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24fa78fb0b54a84089a8af415f7ef9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8cdcb2d2cf2127e4faad25390973f99b, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1001 &584058712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12113,10 +12138,6 @@ PrefabInstance:
     - target: {fileID: 833162587683409011, guid: 9516d64615368b249adfb8f407e28b40, type: 3}
       propertyPath: m_Name
       value: Appartment
-      objectReference: {fileID: 0}
-    - target: {fileID: 2701975720660665317, guid: 9516d64615368b249adfb8f407e28b40, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9516d64615368b249adfb8f407e28b40, type: 3}

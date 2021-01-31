@@ -46,6 +46,11 @@ public class AkEvent : AkDragDropTriggerHandler
 	public AK.Wwise.Event data = new AK.Wwise.Event();
 	protected override AK.Wwise.BaseType WwiseType { get { return data; } }
 
+	public void PlaySound()
+	{
+		HandleEvent(this.gameObject);
+	}
+
 	[System.Serializable]
 	public class CallbackData
 	{
@@ -59,6 +64,7 @@ public class AkEvent : AkDragDropTriggerHandler
 				GameObject.SendMessage(FunctionName, eventCallbackMsg);
 		}
 	}
+
 
 	public bool useCallbacks = false;
 	public System.Collections.Generic.List<CallbackData> Callbacks = new System.Collections.Generic.List<CallbackData>();

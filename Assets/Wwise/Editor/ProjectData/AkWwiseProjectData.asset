@@ -89,7 +89,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f6ebd04867c91f44a416a775dcac3ea8
     GuidInternal: 
-    m_lastTime: -8585896274043191731
+    m_lastTime: -8585895008404398449
     List: []
   - PhysicalPath: Events\Frank.wwu
     PathAndIcons:
@@ -107,8 +107,20 @@ MonoBehaviour:
     ParentPath: Vasily
     guid: 92c7119a19e7c44d916603d058e1cd1e
     GuidInternal: 
-    m_lastTime: -8585896274043181724
-    List: []
+    m_lastTime: -8585895008404308373
+    List:
+    - name: Play_Amb_Global_Blend
+      guid: 0d1f8138f2471d41938bbf9c227e3c8c
+      id: 1345175672
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Play_Amb_Global_Blend
+        ObjectType: 3
+      Path: Vasily\Play_Amb_Global_Blend
+      maxAttenuation: 0
+      maxDuration: 56
+      minDuration: 56
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -127,8 +139,39 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 7e59c2a6490ea743b1ac781b90957e89
     GuidInternal: 
-    m_lastTime: -8585896274043061624
-    List: []
+    m_lastTime: -8585895010814393163
+    List:
+    - name: Ambince_State
+      guid: 5e660d493251104ca57e47ff47cc5250
+      id: 1756034948
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambince_State
+        ObjectType: 9
+      Path: Default Work Unit\Ambince_State
+      values:
+      - name: Inside
+        guid: ba6a378f0121e7449566f840bef28619
+        id: 3553349781
+        PathAndIcons:
+        - ElementName: Inside
+          ObjectType: 8
+      - name: None
+        guid: a8fd5abf68165b41bbe1dfb20964b22b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Outside
+        guid: 3afc2172201d504ca5f6c4dc9b95ec6a
+        id: 438105790
+        PathAndIcons:
+        - ElementName: Outside
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -137,7 +180,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 47fd572b5ce3de4f9951114e7f0e7249
     GuidInternal: 
-    m_lastTime: -8585896274043051616
+    m_lastTime: -8585895010999467985
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -149,6 +192,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585896274043051616
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /GGJ21
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -1,6 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1252261978	SoundTest			\Dani\SoundTest	
+	1345175672	Play_Amb_Global_Blend			\Vasily\Play_Amb_Global_Blend	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1756034948	Ambince_State			\Default Work Unit\Ambince_State	
+
+State	ID	Name	State Group			Notes
+	438105790	Outside	Ambince_State			
+	748895195	None	Ambince_State			
+	3553349781	Inside	Ambince_State			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	155916653	Inside	Ambince_State	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\OutdoorsBed		
+	439780527	Outside	Ambince_State	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\IndoorsBed		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	29059666	TestSound	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Cos1_10C4C929.wem		\Actor-Mixer Hierarchy\Dani\TestSound		37788
+	351576598	OutdoorsBed	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\OutdoorsBed_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\OutdoorsBed		10752064
+	850767414	IndoorsBed	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\IndoorsBed_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\IndoorsBed		10752064
 

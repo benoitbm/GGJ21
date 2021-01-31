@@ -1,6 +1,375 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}" SchemaVersion="97">
 	<AudioObjects>
-		<WorkUnit Name="Vasily" ID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}" PersistMode="Standalone"/>
+		<WorkUnit Name="Vasily" ID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Ambience" ID="{84E6C5EB-0754-4D44-8A69-6708F2DB6128}" ShortID="1353918">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Can1" ID="{1CD8E9B6-17F6-4893-827E-71724186E25D}" ShortID="708017103">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Can1" ID="{5198B812-D56F-48F3-9367-5DE543457261}">
+									<Language>SFX</Language>
+									<AudioFile>Amb\Can1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="131237825"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Can1" ID="{5198B812-D56F-48F3-9367-5DE543457261}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Can2" ID="{C99DBA00-C914-430B-B931-0D0044F7978E}" ShortID="632095220">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Can2" ID="{A45E38FF-070C-499F-A0D8-2C92BFD30F8C}">
+									<Language>SFX</Language>
+									<AudioFile>Amb\Can2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="102707340"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Can2" ID="{A45E38FF-070C-499F-A0D8-2C92BFD30F8C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Can3" ID="{8AD5A447-22CC-460B-AFFA-DB85B24AE32B}" ShortID="359096452">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Can3" ID="{9D6899D2-D13F-40BA-AF5D-9F324C045C3D}">
+									<Language>SFX</Language>
+									<AudioFile>Amb\Can3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1023831991"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Can3" ID="{9D6899D2-D13F-40BA-AF5D-9F324C045C3D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FootstepsAmb1" ID="{3C29A5AE-FAC8-420A-A768-747014569583}" ShortID="298966175">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FootstepsAmb1" ID="{C24AB8A2-F677-4542-BE31-7F76F75F32B5}">
+									<Language>SFX</Language>
+									<AudioFile>Amb\FootstepsAmb1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="368970212"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FootstepsAmb1" ID="{C24AB8A2-F677-4542-BE31-7F76F75F32B5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FootstepsAmb2" ID="{0EE82109-67D2-43FD-864D-320883C15C93}" ShortID="963785516">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FootstepsAmb2" ID="{27033895-435E-4410-85A7-02B42D55DCE9}">
+									<Language>SFX</Language>
+									<AudioFile>Amb\FootstepsAmb2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="712890661"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FootstepsAmb2" ID="{27033895-435E-4410-85A7-02B42D55DCE9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FootstepsAmb3" ID="{9341EE22-89C6-4A03-BE12-6280ED4709A2}" ShortID="467839667">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FootstepsAmb3" ID="{6C2A4ECF-A47A-47AF-AF7B-09BB18D4CE2F}">
+									<Language>SFX</Language>
+									<AudioFile>Amb\FootstepsAmb3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="853816082"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FootstepsAmb3" ID="{6C2A4ECF-A47A-47AF-AF7B-09BB18D4CE2F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FootstepsAmb4" ID="{2401BFE3-A57B-46A3-AF72-ED991C4B334E}" ShortID="690806739">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FootstepsAmb4" ID="{569176D1-29E2-4E02-9860-E4FD2CB2C128}">
+									<Language>SFX</Language>
+									<AudioFile>Amb\FootstepsAmb4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="392815547"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FootstepsAmb4" ID="{569176D1-29E2-4E02-9860-E4FD2CB2C128}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FootstepsAmb5" ID="{9BFB7D2C-433A-4DDA-852E-EC9CED47D116}" ShortID="630168642">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FootstepsAmb5" ID="{473D4160-BD2E-4F0D-A9C1-02E0C0B582CF}">
+									<Language>SFX</Language>
+									<AudioFile>Amb\FootstepsAmb5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="94172068"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FootstepsAmb5" ID="{473D4160-BD2E-4F0D-A9C1-02E0C0B582CF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Squeak1" ID="{CF130B68-88DE-48AF-B755-1A0E5F9E1556}" ShortID="822326904">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Squeak1" ID="{8AE04033-55FF-4438-B93E-35EE617024EF}">
+									<Language>SFX</Language>
+									<AudioFile>Amb\Squeak1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="968167697"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Squeak1" ID="{8AE04033-55FF-4438-B93E-35EE617024EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Squeak2" ID="{B34A6A22-709D-49E2-818A-20BDF505527F}" ShortID="16073797">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Squeak2" ID="{E60F0EFC-CFCF-442A-AB44-4A84F916E044}">
+									<Language>SFX</Language>
+									<AudioFile>Amb\Squeak2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1064096417"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Squeak2" ID="{E60F0EFC-CFCF-442A-AB44-4A84F916E044}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Squeak3Rare" ID="{ABF21E0E-7669-44D3-9872-8A2B3F2A7A0D}" ShortID="613975675">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Squeak3Rare" ID="{BD7F6965-EA0B-4B89-8722-300CA7B3B97E}">
+									<Language>SFX</Language>
+									<AudioFile>Amb\Squeak3Rare.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="361987799"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Squeak3Rare" ID="{BD7F6965-EA0B-4B89-8722-300CA7B3B97E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="Amb_Global_Blend" ID="{16DF726F-9737-44A7-8FA7-B72C3242E40B}" ShortID="119657898">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="OutdoorsBed" ID="{F4F34C26-F3F3-47B2-A3CC-C9A7C173CB4F}" ShortID="922862092">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="OutdoorsBed" ID="{32A35BBE-6FEC-4B56-BDBD-6F714C30485D}">
+											<Language>SFX</Language>
+											<AudioFile>Amb\OutdoorsBed.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="351576598"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Ambince_State" ID="{490D665E-5132-4C10-A57E-47FF47CC5250}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Inside" ID="{8F376ABA-2101-44E7-9566-F840BEF28619}"/>
+												<CustomState Name="" ID="{86B03534-8C66-48A9-A07A-C9CE26D805DB}" ShortID="155916653">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16" Value="15"/>
+														<Property Name="Lowpass" Type="int16" Value="25"/>
+														<Property Name="Volume" Type="Real64" Value="-9"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Outside" ID="{7221FC3A-1D20-4C50-A5F6-C4DC9B95EC6A}"/>
+												<CustomState Name="" ID="{0254875F-6DA3-4EEF-BA5A-7A21172E3185}" ShortID="36945039"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="OutdoorsBed" ID="{32A35BBE-6FEC-4B56-BDBD-6F714C30485D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="IndoorsBed" ID="{B1DEF735-18ED-4A20-9C25-A5233CFA7917}" ShortID="623505325">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IndoorsBed" ID="{D4F32A5E-981C-4712-AE05-331C1DD30D66}">
+											<Language>SFX</Language>
+											<AudioFile>Amb\IndoorsBed.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="850767414"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Ambince_State" ID="{490D665E-5132-4C10-A57E-47FF47CC5250}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Inside" ID="{8F376ABA-2101-44E7-9566-F840BEF28619}"/>
+												<CustomState Name="" ID="{538A8A4C-E5E3-4975-837B-26CA17DF6A3C}" ShortID="38458254"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Outside" ID="{7221FC3A-1D20-4C50-A5F6-C4DC9B95EC6A}"/>
+												<CustomState Name="" ID="{2557C5FC-6CBC-4E27-BB4F-CC17CEF2C32C}" ShortID="439780527">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="IndoorsBed" ID="{D4F32A5E-981C-4712-AE05-331C1DD30D66}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

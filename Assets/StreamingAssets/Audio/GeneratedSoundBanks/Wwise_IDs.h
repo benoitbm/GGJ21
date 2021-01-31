@@ -13,8 +13,25 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_AMB_GLOBAL_BLEND = 1345175672U;
         static const AkUniqueID SOUNDTEST = 1252261978U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace AMBINCE_STATE
+        {
+            static const AkUniqueID GROUP = 1756034948U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INSIDE = 3553349781U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTSIDE = 438105790U;
+            } // namespace STATE
+        } // namespace AMBINCE_STATE
+
+    } // namespace STATES
 
     namespace BANKS
     {

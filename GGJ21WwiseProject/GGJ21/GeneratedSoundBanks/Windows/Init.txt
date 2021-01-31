@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1756034948	Ambince_State			\Default Work Unit\Ambince_State	
+
+State	ID	Name	State Group			Notes
+	438105790	Outside	Ambince_State			
+	748895195	None	Ambince_State			
+	3553349781	Inside	Ambince_State			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9A11C792-E719-4DC4-9166-03D058E1CD1E}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Vasily" ID="{9A11C792-E719-4DC4-9166-03D058E1CD1E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Vasily" ID="{9A11C792-E719-4DC4-9166-03D058E1CD1E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Amb_Global_Blend" ID="{38811F0D-47F2-411D-938B-BF9C227E3C8C}">
+					<ChildrenList>
+						<Action Name="" ID="{C4E2FA77-3EAD-425F-96A0-BCAFAA6F7A2B}" ShortID="50920638">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Amb_Global_Blend" ID="{16DF726F-9737-44A7-8FA7-B72C3242E40B}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

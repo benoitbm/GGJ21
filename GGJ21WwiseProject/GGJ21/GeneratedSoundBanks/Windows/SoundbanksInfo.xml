@@ -11,16 +11,28 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4204904655">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1439029025">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3233924637">
+		<SoundBank Id="3161908922" Language="SFX" Hash="715652265">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1345175672" Name="Play_Amb_Global_Blend" ObjectPath="\Events\Vasily\Play_Amb_Global_Blend" DurationType="OneShot" DurationMin="56.000000" DurationMax="56.000000">
+					<IncludedMemoryFiles>
+						<File Id="351576598" Language="SFX">
+							<ShortName>Amb\OutdoorsBed.wav</ShortName>
+							<Path>SFX\Amb\OutdoorsBed_10C4C929.wem</Path>
+						</File>
+						<File Id="850767414" Language="SFX">
+							<ShortName>Amb\IndoorsBed.wav</ShortName>
+							<Path>SFX\Amb\IndoorsBed_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1252261978" Name="SoundTest" ObjectPath="\Events\Dani\SoundTest" DurationType="OneShot" DurationMin="0.213855" DurationMax="0.213855">
 					<IncludedMemoryFiles>
 						<File Id="29059666" Language="SFX">
