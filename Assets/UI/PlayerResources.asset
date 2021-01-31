@@ -19,4 +19,6 @@ MonoBehaviour:
   textures:
   - uri: Assets/UI/Assets/CharacterResources/tooth.png
     texture: {fileID: 2800000, guid: b949916198baa314dafedebf95292a7d, type: 3}
+  - uri: Assets/UI/Assets/CharacterResources/coin.png
+    texture: {fileID: 2800000, guid: 6958cea0140fe0b4aba356cfc6db5d60, type: 3}
   audios: []
