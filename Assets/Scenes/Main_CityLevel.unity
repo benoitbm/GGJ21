@@ -1581,6 +1581,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9516d64615368b249adfb8f407e28b40, type: 3}
+--- !u!1 &249029748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2025378250, guid: ef086f904e3d93e47ae642196a7e94a7, type: 3}
+  m_PrefabInstance: {fileID: 661396713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &249029749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249029748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29355477be96127469aed699dd82b4be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _xaml: {fileID: 11400000, guid: 40c47c43d585ec04bb69359124af8ce3, type: 2}
+  _texture: {fileID: 0}
+  _isPPAAEnabled: 1
+  _tessellationMaxPixelError: 0.4
+  _renderFlags: 0
+  _continuousRendering: 1
+  _enableExternalUpdate: 0
+  _enableKeyboard: 1
+  _enableMouse: 1
+  _enableTouch: 1
+  _enableGamepad: 0
+  _emulateTouch: 0
+  _useRealTimeClock: 0
 --- !u!1001 &309268050
 PrefabInstance:
   m_ObjectHideFlags: 0
