@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5b21a3be64d9b4f8396f1a4efde4d1, type: 3}
+  m_Name: 38811F0D-47F2-411D-938B-BF9C227E3C8C
+  m_EditorClassIdentifier: 
+  objectName: Play_Amb_Global_Blend
+  id: 1345175672
+  guid: 38811F0D-47F2-411D-938B-BF9C227E3C8C
