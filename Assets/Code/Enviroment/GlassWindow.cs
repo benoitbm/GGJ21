@@ -10,15 +10,6 @@ public class GlassWindow : MonoBehaviour
     public float m_SpeedToBreakWindow = 3f;
     public float m_ScreenShakeDuration = 0.1f;
     public float m_ScreenShakeAmount = 0.08f;
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            PlayerImpact(other.gameObject);
-        }    
-    }
-
     public void PlayerImpact(GameObject player)
     {
         Transform playerTransform = player.GetComponent<Transform>();
@@ -37,6 +28,12 @@ public class GlassWindow : MonoBehaviour
 
     private void Break(Vector2 moveSpeed, Transform playerTransform)
     {
+        Appartment appartment = transform.parent.GetComponentInParent<Appartment>();
+        if (appartment)
+        {
+            appartment.OnWindowBroke();
+        }
+
         Destroy(gameObject.GetComponent<BoxCollider2D>());
         Destroy(gameObject.GetComponent<SpriteRenderer>());
 

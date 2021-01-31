@@ -21,7 +21,6 @@ public class ObjectFragment : MonoBehaviour
             gameObject.transform.eulerAngles.x,
             gameObject.transform.eulerAngles.y,
             gameObject.transform.eulerAngles.z + Random.Range(-180.0f, 180.0f));
-        Debug.Log(gameObject.transform.eulerAngles);
     }
 
     // Update is called once per frame
