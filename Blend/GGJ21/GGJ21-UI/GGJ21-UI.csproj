@@ -60,6 +60,9 @@
     <Compile Include="..\..\..\Assets\UI\PlayerResources.xaml.cs">
       <Link>PlayerResources.xaml.cs</Link>
     </Compile>
+    <Compile Include="..\..\..\Assets\UI\ResultScreen.xaml.cs">
+      <Link>ResultScreen.xaml.cs</Link>
+    </Compile>
     <Compile Include="..\..\..\Assets\UI\Timer.xaml.cs">
       <Link>Timer.xaml.cs</Link>
     </Compile>
@@ -101,6 +104,11 @@
     </Page>
     <Page Include="..\..\..\Assets\UI\PlayerResources.xaml">
       <Link>PlayerResources.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\Assets\UI\ResultScreen.xaml">
+      <Link>ResultScreen.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

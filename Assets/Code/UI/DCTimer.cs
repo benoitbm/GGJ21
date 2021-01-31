@@ -20,7 +20,7 @@ public class DCTimer : DCWidget, INotifyPropertyChanged
     #region Getters
     public override gui.EWidgetType GetWidgetType() { return gui.EWidgetType.Timer; }
 
-    protected override string GetFileName() { return "Timer.xaml"; }
+    protected override string GetFileName() { return "Timer"; }
     #endregion
 
     public void SetIsTimeAttack(bool isTimeAttack) { m_IsTimeAttack = isTimeAttack; }

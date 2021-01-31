@@ -11,7 +11,7 @@ public class DCCharacterResources : DCWidget, INotifyPropertyChanged
     #region Getters
     public override gui.EWidgetType GetWidgetType() { return gui.EWidgetType.CharacterResources; }
 
-    protected override string GetFileName() { return "PlayerResources.xaml"; }
+    protected override string GetFileName() { return "PlayerResources"; }
     #endregion
 
     #region Setters

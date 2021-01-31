@@ -35,7 +35,5 @@ public class PlayerResources : MonoBehaviour
 
         FindObjectOfType<GameMaster>().GetComponent<GameMaster>().RequestGameTimer(false);
     }
-#endregion
-
-
+    #endregion
 }

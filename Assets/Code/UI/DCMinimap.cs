@@ -8,7 +8,7 @@ public class DCMinimap : DCWidget
     #region Getters
     public override gui.EWidgetType GetWidgetType() { return gui.EWidgetType.Minimap; }
 
-    protected override string GetFileName() { return "Minimap.xaml"; }
+    protected override string GetFileName() { return "Minimap"; }
     #endregion
 
     public override void Initialize(NoesisView panel)
@@ -20,8 +20,7 @@ public class DCMinimap : DCWidget
     public void SetMinimapTexture(RenderTexture texture) { m_RenderTexture = texture; }
     public void BindMinimap()
     {
-        // Find the rectangle where texture will be drawn
-        var rect = (Noesis.Rectangle)m_DC.FindName("rtRect");
+        // Find the border where texture will be drawn
         var border = (Noesis.Border)m_DC.FindName("rtBorder");
 
         // Create Noesis texture

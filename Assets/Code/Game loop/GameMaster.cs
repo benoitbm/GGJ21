@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
@@ -29,10 +30,22 @@ public class GameMaster : MonoBehaviour
         TimerComponent comp = GetComponent<TimerComponent>();
         m_RemainingTime = Mathf.Max(comp.GetRemainingTime(), 0.0f);
         m_WasTimeAttack = comp.IsTimeAttack();
-        FindObjectOfType<ViewModelManager>().GetComponent<ViewModelManager>().RemoveWidget(gui.EWidgetType.Timer);
+        ViewModelManager viewModel = FindObjectOfType<ViewModelManager>().GetComponent<ViewModelManager>();
+        viewModel.RemoveWidget(gui.EWidgetType.Timer);
+        viewModel.RemoveWidget(gui.EWidgetType.Minimap);
+        viewModel.RemoveWidget(gui.EWidgetType.CharacterResources);
         Destroy(comp);
 
         PlayerResources playerResources = FindObjectOfType<PlayerResources>().GetComponent<PlayerResources>();
         m_Score = playerResources.GetCurrentScore();
+
+        SceneManager.LoadScene("ResultScreen");
+    }
+
+    public void GetResults(out float remainTime, out int score, out bool timeAttack)
+    {
+        remainTime = m_RemainingTime;
+        score = m_Score;
+        timeAttack = m_WasTimeAttack;
     }
 }
