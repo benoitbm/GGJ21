@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID GLASSBREAK = 2419553536U;
+        static const AkUniqueID GLASSSHARD = 3627491425U;
         static const AkUniqueID PLAY_AMB_GLOBAL_BLEND = 1345175672U;
         static const AkUniqueID SOUNDTEST = 1252261978U;
     } // namespace EVENTS

@@ -148,3 +148,4 @@ MonoBehaviour:
   maxRoationSpeed: 150
   stopRoationSpeed: 0.5
   fadetime: 1
+  soundEvent: GlassShard

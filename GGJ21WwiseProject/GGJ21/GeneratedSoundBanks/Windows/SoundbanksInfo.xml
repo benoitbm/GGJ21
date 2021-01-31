@@ -8,28 +8,111 @@
 		<ExternalSourcesOutputRoot>D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="351576598" Language="SFX">
+			<ShortName>Amb\OutdoorsBed.wav</ShortName>
+			<Path>SFX\Amb\OutdoorsBed_D79FB2B7.wem</Path>
+		</File>
+		<File Id="850767414" Language="SFX">
+			<ShortName>Amb\IndoorsBed.wav</ShortName>
+			<Path>SFX\Amb\IndoorsBed_D79FB2B7.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1439029025">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2221725224">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="715652265">
+		<SoundBank Id="3161908922" Language="SFX" Hash="33416973">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1345175672" Name="Play_Amb_Global_Blend" ObjectPath="\Events\Vasily\Play_Amb_Global_Blend" DurationType="OneShot" DurationMin="56.000000" DurationMax="56.000000">
+				<Event Id="2419553536" Name="GlassBreak" ObjectPath="\Events\Vasily\GlassBreak" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.747849" DurationMax="4.621312">
 					<IncludedMemoryFiles>
+						<File Id="438564464" Language="SFX">
+							<ShortName>SFX\GlassBreak.wav</ShortName>
+							<Path>SFX\SFX\GlassBreak_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3627491425" Name="GlassShard" ObjectPath="\Events\Vasily\GlassShard" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.445449" DurationMax="0.629961">
+					<IncludedMemoryFiles>
+						<File Id="209724574" Language="SFX">
+							<ShortName>SFX\GlassBit4 (1).wav</ShortName>
+							<Path>SFX\SFX\GlassBit4 (1)_10C4C929.wem</Path>
+						</File>
+						<File Id="390854284" Language="SFX">
+							<ShortName>SFX\GlassBit1 (1).wav</ShortName>
+							<Path>SFX\SFX\GlassBit1 (1)_10C4C929.wem</Path>
+						</File>
+						<File Id="750179482" Language="SFX">
+							<ShortName>SFX\GlassBit3 (1).wav</ShortName>
+							<Path>SFX\SFX\GlassBit3 (1)_10C4C929.wem</Path>
+						</File>
+						<File Id="1023634776" Language="SFX">
+							<ShortName>SFX\GlassBit2 (1).wav</ShortName>
+							<Path>SFX\SFX\GlassBit2 (1)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1345175672" Name="Play_Amb_Global_Blend" ObjectPath="\Events\Vasily\Play_Amb_Global_Blend" DurationType="Infinite">
+					<ReferencedStreamedFiles>
 						<File Id="351576598" Language="SFX">
 							<ShortName>Amb\OutdoorsBed.wav</ShortName>
-							<Path>SFX\Amb\OutdoorsBed_10C4C929.wem</Path>
+							<Path>SFX\Amb\OutdoorsBed_D79FB2B7.wem</Path>
 						</File>
 						<File Id="850767414" Language="SFX">
 							<ShortName>Amb\IndoorsBed.wav</ShortName>
-							<Path>SFX\Amb\IndoorsBed_10C4C929.wem</Path>
+							<Path>SFX\Amb\IndoorsBed_D79FB2B7.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+					<IncludedMemoryFiles>
+						<File Id="94172068" Language="SFX">
+							<ShortName>Amb\FootstepsAmb5.wav</ShortName>
+							<Path>SFX\Amb\FootstepsAmb5_10C4C929.wem</Path>
+						</File>
+						<File Id="102707340" Language="SFX">
+							<ShortName>Amb\Can2.wav</ShortName>
+							<Path>SFX\Amb\Can2_85300A95.wem</Path>
+						</File>
+						<File Id="131237825" Language="SFX">
+							<ShortName>Amb\Can1.wav</ShortName>
+							<Path>SFX\Amb\Can1_85300A95.wem</Path>
+						</File>
+						<File Id="361987799" Language="SFX">
+							<ShortName>Amb\Squeak3Rare.wav</ShortName>
+							<Path>SFX\Amb\Squeak3Rare_1F137345.wem</Path>
+						</File>
+						<File Id="368970212" Language="SFX">
+							<ShortName>Amb\FootstepsAmb1.wav</ShortName>
+							<Path>SFX\Amb\FootstepsAmb1_10C4C929.wem</Path>
+						</File>
+						<File Id="392815547" Language="SFX">
+							<ShortName>Amb\FootstepsAmb4.wav</ShortName>
+							<Path>SFX\Amb\FootstepsAmb4_10C4C929.wem</Path>
+						</File>
+						<File Id="712890661" Language="SFX">
+							<ShortName>Amb\FootstepsAmb2.wav</ShortName>
+							<Path>SFX\Amb\FootstepsAmb2_10C4C929.wem</Path>
+						</File>
+						<File Id="853816082" Language="SFX">
+							<ShortName>Amb\FootstepsAmb3.wav</ShortName>
+							<Path>SFX\Amb\FootstepsAmb3_10C4C929.wem</Path>
+						</File>
+						<File Id="968167697" Language="SFX">
+							<ShortName>Amb\Squeak1.wav</ShortName>
+							<Path>SFX\Amb\Squeak1_1F137345.wem</Path>
+						</File>
+						<File Id="1023831991" Language="SFX">
+							<ShortName>Amb\Can3.wav</ShortName>
+							<Path>SFX\Amb\Can3_85300A95.wem</Path>
+						</File>
+						<File Id="1064096417" Language="SFX">
+							<ShortName>Amb\Squeak2.wav</ShortName>
+							<Path>SFX\Amb\Squeak2_1F137345.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

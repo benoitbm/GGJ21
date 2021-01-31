@@ -13,6 +13,7 @@ public class ObjectFragment : MonoBehaviour
     bool startFadeOut = false;
     public float fadetime = 1.0f;
     private IEnumerator coroutine;
+    public string soundEvent ="";
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -38,6 +39,14 @@ public class ObjectFragment : MonoBehaviour
             coroutine = fadeOut(spriteRenderer, fadetime);
             StartCoroutine(coroutine);
 
+        }
+    }
+    
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(soundEvent != "")
+        {
+            AkSoundEngine.PostEvent(soundEvent, gameObject);
         }
     }
     IEnumerator fadeOut(SpriteRenderer MyRenderer, float duration)

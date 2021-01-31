@@ -14,6 +14,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="GlassBreak" ID="{F2FA7894-88E8-49D2-83E4-42B72F62A1F6}">
+					<ChildrenList>
+						<Action Name="" ID="{D0F24A52-CEE0-4CC8-B70F-62CB493BFADA}" ShortID="663337981">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GlassBreak" ID="{D4A62B8C-15DC-49F4-A007-4115B1E29F4E}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GlassShard" ID="{21A2C7D4-0D32-403D-A070-0D3AF547F77F}">
+					<ChildrenList>
+						<Action Name="" ID="{776B88A0-EFFE-4D99-A0A8-B1716CC3C07A}" ShortID="439556390">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GlassShard" ID="{1AC7D4B8-CC4F-4720-95A4-31443221E598}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

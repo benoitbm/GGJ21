@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{A6C2597E-0E49-43A7-B1AC-781B90957E89}" PersistMode="Standalone">
 			<ChildrenList>
 				<StateGroup Name="Ambince_State" ID="{490D665E-5132-4C10-A57E-47FF47CC5250}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{BF5AFDA8-1668-415B-BBE1-DFB20964B22B}"/>
 						<State Name="Outside" ID="{7221FC3A-1D20-4C50-A5F6-C4DC9B95EC6A}"/>

@@ -42,7 +42,9 @@ public class GlassWindow : MonoBehaviour
 
         Destroy(gameObject.GetComponent<BoxCollider2D>());
         Destroy(gameObject.GetComponent<SpriteRenderer>());
-        
+        //Sound
+        AkSoundEngine.PostEvent("GlassBreak", gameObject);
+
         //Enable the breaking object 
         foreach (Transform child in transform)
         {

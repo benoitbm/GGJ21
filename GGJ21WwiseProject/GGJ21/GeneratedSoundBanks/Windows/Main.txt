@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1252261978	SoundTest			\Dani\SoundTest	
 	1345175672	Play_Amb_Global_Blend			\Vasily\Play_Amb_Global_Blend	
+	2419553536	GlassBreak			\Vasily\GlassBreak	
+	3627491425	GlassShard			\Vasily\GlassShard	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1756034948	Ambince_State			\Default Work Unit\Ambince_State	
@@ -11,11 +13,33 @@ State	ID	Name	State Group			Notes
 	3553349781	Inside	Ambince_State			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	155916653	Inside	Ambince_State	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\OutdoorsBed		
-	439780527	Outside	Ambince_State	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\IndoorsBed		
+	155916653	Inside	Ambince_State	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\OutdoorsBed		
+	236024207	Outside	Ambince_State	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Indoors		
+	644617528	Inside	Ambince_State	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors		
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	29059666	TestSound	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Cos1_10C4C929.wem		\Actor-Mixer Hierarchy\Dani\TestSound		37788
-	351576598	OutdoorsBed	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\OutdoorsBed_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\OutdoorsBed		10752064
-	850767414	IndoorsBed	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\IndoorsBed_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\IndoorsBed		10752064
+	94172068	FootstepsAmb5	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb5_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb5		1920064
+	102707340	Can2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Can2_85300A95.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Can\Can2		675904
+	131237825	Can1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Can1_85300A95.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Can\Can1		675904
+	209724574	GlassBit4 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit4 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit4 (1)		96064
+	361987799	Squeak3Rare	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Squeak3Rare_1F137345.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Squak\Squeak3Rare		991296
+	368970212	FootstepsAmb1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb1_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb1		1920064
+	390854284	GlassBit1 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit1 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit1 (1)		96064
+	392815547	FootstepsAmb4	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb4_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb4		1920064
+	438564464	GlassBreak	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBreak_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassBreak\GlassBreak		704308
+	712890661	FootstepsAmb2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb2_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb2		1920064
+	750179482	GlassBit3 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit3 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit3 (1)		96064
+	853816082	FootstepsAmb3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\FootstepsAmb3_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Footstesp\FootstepsAmb3		1920064
+	968167697	Squeak1	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Squeak1_1F137345.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Squak\Squeak1		991296
+	1023634776	GlassBit2 (1)	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\SFX\GlassBit2 (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Vasily\SFX\GlassShard\GlassBit2 (1)		96064
+	1023831991	Can3	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Can3_85300A95.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Can\Can3		675904
+	1064096417	Squeak2	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\Squeak2_1F137345.wem		\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\Squak\Squeak2		991296
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	351576598	OutdoorsBed	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\OutdoorsBed_D79FB2B7.wem	351576598.wem	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Outdoors\OutdoorsBed	
+	850767414	IndoorsBed	D:\Projects\GlobalGameJam20201\GGJ21\GGJ21WwiseProject\GGJ21\.cache\Windows\SFX\Amb\IndoorsBed_D79FB2B7.wem	850767414.wem	\Actor-Mixer Hierarchy\Vasily\Ambience\Amb_Global_Blend\Indoors\IndoorsBed	
 

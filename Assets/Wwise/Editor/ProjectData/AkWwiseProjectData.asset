@@ -107,8 +107,32 @@ MonoBehaviour:
     ParentPath: Vasily
     guid: 92c7119a19e7c44d916603d058e1cd1e
     GuidInternal: 
-    m_lastTime: -8585894984853566990
+    m_lastTime: -8585894947454147171
     List:
+    - name: GlassBreak
+      guid: 9478faf2e888d24983e442b72f62a1f6
+      id: 2419553536
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: GlassBreak
+        ObjectType: 3
+      Path: Vasily\GlassBreak
+      maxAttenuation: 30
+      maxDuration: 3.667938
+      minDuration: 3.667938
+    - name: GlassShard
+      guid: d4c7a221320d3d40a0700d3af547f77f
+      id: 3627491425
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: GlassShard
+        ObjectType: 3
+      Path: Vasily\GlassShard
+      maxAttenuation: 30
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Play_Amb_Global_Blend
       guid: 0d1f8138f2471d41938bbf9c227e3c8c
       id: 1345175672
@@ -139,7 +163,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 7e59c2a6490ea743b1ac781b90957e89
     GuidInternal: 
-    m_lastTime: -8585894984847171176
+    m_lastTime: -8585894960724465838
     List:
     - name: Ambince_State
       guid: 5e660d493251104ca57e47ff47cc5250
@@ -192,6 +216,10 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585896274043051616
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /GGJ21
+  - /GGJ21/States
+  - /GGJ21/States/Default Work Unit
+  - /GGJ21/States/Default Work Unit/Ambince_State
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

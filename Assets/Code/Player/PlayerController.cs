@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
     float m_DashIntensity;
     bool m_IsAiming;
 
+    bool m_IsInside;
+
 
     Vector3 m_PreviousFramePosition;
 
@@ -148,7 +150,7 @@ public class PlayerController : MonoBehaviour
         m_TouchGround = false;
         m_PlayerInteractions.ClearInteraction();
 
-        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, m_PlayerCollider.size, 0, ~(LayerMask.GetMask("Glass"))); 
+        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, m_PlayerCollider.size, 0, ~(LayerMask.GetMask("Glass") | LayerMask.GetMask("SoundTrigger"))); 
         foreach (Collider2D hit in hits)
         {
             if (hit == m_PlayerCollider)
@@ -169,7 +171,12 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
-            ColliderDistance2D hitDistance = hit.Distance(m_PlayerCollider);
+            if (hit.GetComponent<Appartment>())
+            {
+                m_IsInside = true;
+            }
+
+                ColliderDistance2D hitDistance = hit.Distance(m_PlayerCollider);
             if (hitDistance.isOverlapped)
             {
                 // Move back from the collision
@@ -182,8 +189,18 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        //Handle Ambience
+        if(m_IsInside)
+        {
+            AkSoundEngine.SetState("Ambince_State", "Inside");
+        }
+        else
+        {
+            AkSoundEngine.SetState("Ambince_State", "Outside");
+        }
+        m_IsInside = false;
         //Stopping Velocity if hit something while in air
-        if(!m_TouchGround)
+        if (!m_TouchGround)
         {
             Vector3 changeInPosition = m_PreviousFramePosition - transform.position;
             if (changeInPosition == Vector3.zero)
