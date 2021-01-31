@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{435C9060-61DF-4BA7-99F5-081188DE515B}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{435C9060-61DF-4BA7-99F5-081188DE515B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{435C9060-61DF-4BA7-99F5-081188DE515B}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Shout_Charge" ID="{2F1E4A97-21EB-4C19-BEB0-904D25CA68AF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

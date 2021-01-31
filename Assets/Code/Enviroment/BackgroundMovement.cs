@@ -10,7 +10,7 @@ public class BackgroundMovement : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 playerVelocity = playercontoller.GetVelocity();
-        float paralexForce = Time.deltaTime * playerVelocity.x * playerSpeedMultipler;
+        float paralexForce = Time.deltaTime * playerSpeedMultipler;
         if (playerVelocity.x != 0)
         {
             if (playerVelocity.x > 0)

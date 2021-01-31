@@ -20,21 +20,29 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2221725224">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2271422591">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="33416973">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1634528718">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2419553536" Name="GlassBreak" ObjectPath="\Events\Vasily\GlassBreak" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.747849" DurationMax="4.621312">
+				<Event Id="2419553536" Name="GlassBreak" ObjectPath="\Events\Vasily\GlassBreak" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.498307" DurationMax="4.621312">
 					<IncludedMemoryFiles>
 						<File Id="438564464" Language="SFX">
 							<ShortName>SFX\GlassBreak.wav</ShortName>
 							<Path>SFX\SFX\GlassBreak_10C4C929.wem</Path>
+						</File>
+						<File Id="748047387" Language="SFX">
+							<ShortName>SFX\GlassBreak3.wav</ShortName>
+							<Path>SFX\SFX\GlassBreak3_10C4C929.wem</Path>
+						</File>
+						<File Id="938553613" Language="SFX">
+							<ShortName>SFX\GlassBreak2.wav</ShortName>
+							<Path>SFX\SFX\GlassBreak2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -113,6 +121,53 @@
 						<File Id="1064096417" Language="SFX">
 							<ShortName>Amb\Squeak2.wav</ShortName>
 							<Path>SFX\Amb\Squeak2_1F137345.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3582693563" Name="Shout_Charge" ObjectPath="\Events\Vasily\Shout_Charge" MaxAttenuation="30.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="257946923" Language="SFX">
+							<ShortName>SFX\Charge1.wav</ShortName>
+							<Path>SFX\SFX\Charge1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2210254522" Name="Shout_Inhale" ObjectPath="\Events\Vasily\Shout_Inhale" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.432768" DurationMax="0.486864">
+					<IncludedMemoryFiles>
+						<File Id="261955874" Language="SFX">
+							<ShortName>SFX\Breath4.wav</ShortName>
+							<Path>SFX\SFX\Breath4_10C4C929.wem</Path>
+						</File>
+						<File Id="382754437" Language="SFX">
+							<ShortName>SFX\Breath2.wav</ShortName>
+							<Path>SFX\SFX\Breath2_10C4C929.wem</Path>
+						</File>
+						<File Id="682873521" Language="SFX">
+							<ShortName>SFX\Breath3.wav</ShortName>
+							<Path>SFX\SFX\Breath3_10C4C929.wem</Path>
+						</File>
+						<File Id="928306418" Language="SFX">
+							<ShortName>SFX\Breath1.wav</ShortName>
+							<Path>SFX\SFX\Breath1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="3582693563" Name="Shout_Charge" ObjectPath="\Events\Vasily\Shout_Charge"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="1912761094" Name="Shout_Shout" ObjectPath="\Events\Vasily\Shout_Shout" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.512257" DurationMax="1.749633">
+					<IncludedMemoryFiles>
+						<File Id="9263921" Language="SFX">
+							<ShortName>SFX\Shout2.wav</ShortName>
+							<Path>SFX\SFX\Shout2_C084F823.wem</Path>
+						</File>
+						<File Id="263683147" Language="SFX">
+							<ShortName>SFX\Shout3.wav</ShortName>
+							<Path>SFX\SFX\Shout3_94FBDAE7.wem</Path>
+						</File>
+						<File Id="750572623" Language="SFX">
+							<ShortName>SFX\Shout1.wav</ShortName>
+							<Path>SFX\SFX\Shout1_897F2735.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

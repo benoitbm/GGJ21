@@ -36,6 +36,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Shout_Inhale" ID="{FBE79000-0B16-41C3-A632-A201B9EE63F3}">
+					<ChildrenList>
+						<Action Name="" ID="{A3EC5051-F8DD-4739-B4A8-70B4A674D4DB}" ShortID="304507759">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Inhale" ID="{E3DE9F1D-F3F9-41DB-8194-735EDA1CEFA3}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1211EFAD-5D5F-4F14-93F9-756884FDF1EA}" ShortID="424577306">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shout_Charge" ID="{C313F710-6320-4F2D-8BA0-CAADD82EEE7F}" WorkUnitID="{9A11C792-E719-4DC4-9166-03D058E1CD1E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Shout_Charge" ID="{C313F710-6320-4F2D-8BA0-CAADD82EEE7F}">
+					<ChildrenList>
+						<Action Name="" ID="{1631021F-6CEC-492E-816A-8F2FBF165A78}" ShortID="55555316">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Charge" ID="{E6018927-D740-4911-B9CC-ACD79B227E13}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Shout_Shout" ID="{3A834673-773E-47E8-BAE4-06DB044B641E}">
+					<ChildrenList>
+						<Action Name="" ID="{33AD0056-A606-4A0A-ABD4-37DC414B02A0}" ShortID="60644883">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shout" ID="{DF4DC167-7F9D-452B-8697-F3820A3CD7FC}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7377AC16-C46A-488A-B064-8A7F625E8EE2}" ShortID="244909728">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Charge" ID="{E6018927-D740-4911-B9CC-ACD79B227E13}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

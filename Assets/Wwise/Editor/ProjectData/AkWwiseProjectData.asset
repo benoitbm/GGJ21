@@ -89,7 +89,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f6ebd04867c91f44a416a775dcac3ea8
     GuidInternal: 
-    m_lastTime: -8585895008404398449
+    m_lastTime: -8585894917111275111
     List: []
   - PhysicalPath: Events\Frank.wwu
     PathAndIcons:
@@ -107,7 +107,7 @@ MonoBehaviour:
     ParentPath: Vasily
     guid: 92c7119a19e7c44d916603d058e1cd1e
     GuidInternal: 
-    m_lastTime: -8585894947454147171
+    m_lastTime: -8585894910215806735
     List:
     - name: GlassBreak
       guid: 9478faf2e888d24983e442b72f62a1f6
@@ -119,8 +119,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Vasily\GlassBreak
       maxAttenuation: 30
-      maxDuration: 3.667938
-      minDuration: 3.667938
+      maxDuration: 4.621312
+      minDuration: 2.747849
     - name: GlassShard
       guid: d4c7a221320d3d40a0700d3af547f77f
       id: 3627491425
@@ -131,8 +131,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Vasily\GlassShard
       maxAttenuation: 30
-      maxDuration: 0.5
-      minDuration: 0.5
+      maxDuration: 0.629961
+      minDuration: 0.445449
     - name: Play_Amb_Global_Blend
       guid: 0d1f8138f2471d41938bbf9c227e3c8c
       id: 1345175672
@@ -145,6 +145,42 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Shout_Charge
+      guid: 10f713c320632d4f8ba0caadd82eee7f
+      id: 3582693563
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Shout_Charge
+        ObjectType: 3
+      Path: Vasily\Shout_Charge
+      maxAttenuation: 30
+      maxDuration: -1
+      minDuration: -1
+    - name: Shout_Inhale
+      guid: 0090e7fb160bc341a632a201b9ee63f3
+      id: 2210254522
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Shout_Inhale
+        ObjectType: 3
+      Path: Vasily\Shout_Inhale
+      maxAttenuation: 30
+      maxDuration: 0.486864
+      minDuration: 0.432768
+    - name: Shout_Shout
+      guid: 7346833a3e77e847bae406db044b641e
+      id: 1912761094
+      PathAndIcons:
+      - ElementName: Vasily
+        ObjectType: 12
+      - ElementName: Shout_Shout
+        ObjectType: 3
+      Path: Vasily\Shout_Shout
+      maxAttenuation: 30
+      maxDuration: 1.749633
+      minDuration: 1.512257
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -153,8 +189,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 60905c43df61a74b99f5081188de515b
     GuidInternal: 
-    m_lastTime: -8585896274043161709
-    List: []
+    m_lastTime: -8585894912287104802
+    List:
+    - name: Shout_Charge
+      guid: 974a1e2feb21194cbeb0904d25ca68af
+      id: 3582693563
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Shout_Charge
+        ObjectType: 13
+      Path: Default Work Unit\Shout_Charge
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
