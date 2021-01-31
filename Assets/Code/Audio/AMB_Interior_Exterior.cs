@@ -32,4 +32,3 @@ public class AMB_Interior_Exterior : MonoBehaviour
         }
     }
 }
-}
