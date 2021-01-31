@@ -55,6 +55,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{861248D2-E5CB-4D49-83A8-C6FFF2A972A1}" ShortID="781327567">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Slowtime" ID="{13502008-CB4E-4177-9FCA-89A3C95EB586}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Shout_Charge" ID="{C313F710-6320-4F2D-8BA0-CAADD82EEE7F}">
@@ -121,6 +128,54 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Swhoosh" ID="{F6AE2839-8733-4743-AC09-C5C405B227D0}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Items" ID="{93849854-707F-4C8C-A83E-BD543552DD7C}" ShortID="1054614205">
+					<ChildrenList>
+						<Event Name="ToothExchange_Success" ID="{2AE1A629-6327-4DC2-94E5-EA4A21BFA640}">
+							<ChildrenList>
+								<Action Name="" ID="{D0AD3985-70B4-483D-9826-B8E14691278D}" ShortID="766920778">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ToothExchange_Success" ID="{16D09BDD-F8E5-4E61-8CC2-CDDBB583F274}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ATM_Use" ID="{D453ED6A-82E7-461E-B681-2EEFB3D985B0}">
+							<ChildrenList>
+								<Action Name="" ID="{F62F8E72-E92B-482D-92D6-A1B7ED23ACC1}" ShortID="216896214">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ATM_Use" ID="{E92340BC-F67D-4BED-A7E0-E8AACE14C1D9}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ToothExchange_Fail" ID="{D9030519-D2FA-45BB-8FED-EB832BB16EF4}">
+							<ChildrenList>
+								<Action Name="" ID="{3300CECC-DD5F-4D86-A3D5-BCE52A91326A}" ShortID="32657684">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ToothExchange_Fail" ID="{6F27A17C-0736-41CC-AA11-C970EEBA925E}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ATM_PlayerFull" ID="{8DF09BE8-AF70-47C5-8979-F444C46500D6}">
+							<ChildrenList>
+								<Action Name="" ID="{B17EF587-978A-4524-99A4-A5370E5BAD11}" ShortID="1011879999">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ATM_PlayerFull" ID="{597A0D95-314B-486E-9015-81D8DC6B3E85}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

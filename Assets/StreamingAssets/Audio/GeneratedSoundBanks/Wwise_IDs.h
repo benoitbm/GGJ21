@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ATM_PLAYERFULL = 1352310214U;
+        static const AkUniqueID ATM_USE = 1178451283U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID GLASSBREAK = 2419553536U;
         static const AkUniqueID GLASSSHARD = 3627491425U;
@@ -23,6 +25,8 @@ namespace AK
         static const AkUniqueID SHOUT_SHOUT = 1912761094U;
         static const AkUniqueID SOUNDTEST = 1252261978U;
         static const AkUniqueID SWHOOSH = 1803035582U;
+        static const AkUniqueID TOOTHEXCHANGE_FAIL = 826597249U;
+        static const AkUniqueID TOOTHEXCHANGE_SUCCESS = 1293015998U;
     } // namespace EVENTS
 
     namespace STATES

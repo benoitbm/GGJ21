@@ -20,16 +20,32 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1725493125">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4053027561">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4250125367">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1131870721">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1352310214" Name="ATM_PlayerFull" ObjectPath="\Events\Vasily\Items\ATM_PlayerFull" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.000917" DurationMax="1.000917">
+					<IncludedMemoryFiles>
+						<File Id="703126402" Language="SFX">
+							<ShortName>SFX\ATMdenied.wav</ShortName>
+							<Path>SFX\SFX\ATMdenied_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1178451283" Name="ATM_Use" ObjectPath="\Events\Vasily\Items\ATM_Use" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.000958" DurationMax="2.000958">
+					<IncludedMemoryFiles>
+						<File Id="287893457" Language="SFX">
+							<ShortName>SFX\ATM.wav</ShortName>
+							<Path>SFX\SFX\ATM_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Vasily\Character_Foley\Footstep" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000">
 					<IncludedMemoryFiles>
 						<File Id="9020182" Language="SFX">
@@ -172,7 +188,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2210254522" Name="Shout_Inhale" ObjectPath="\Events\Vasily\Shout_Inhale" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.268469" DurationMax="0.400143">
+				<Event Id="2210254522" Name="Shout_Inhale" ObjectPath="\Events\Vasily\Shout_Inhale" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.998688" DurationMax="0.998688">
 					<IncludedMemoryFiles>
 						<File Id="261955874" Language="SFX">
 							<ShortName>SFX\Breath4.wav</ShortName>
@@ -189,6 +205,10 @@
 						<File Id="928306418" Language="SFX">
 							<ShortName>SFX\Breath1.wav</ShortName>
 							<Path>SFX\SFX\Breath1_C10EC069.wem</Path>
+						</File>
+						<File Id="1037875941" Language="SFX">
+							<ShortName>SFX\Slowtime.wav</ShortName>
+							<Path>SFX\SFX\Slowtime_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<ActionPostEvent>
@@ -232,6 +252,22 @@
 						<File Id="1073439711" Language="SFX">
 							<ShortName>SFX\CharacterFoley\Swoosh1.wav</ShortName>
 							<Path>SFX\SFX\CharacterFoley\Swoosh1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="826597249" Name="ToothExchange_Fail" ObjectPath="\Events\Vasily\Items\ToothExchange_Fail" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="2.000958" DurationMax="2.000958">
+					<IncludedMemoryFiles>
+						<File Id="888678593" Language="SFX">
+							<ShortName>SFX\ExchangeDenied.wav</ShortName>
+							<Path>SFX\SFX\ExchangeDenied_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1293015998" Name="ToothExchange_Success" ObjectPath="\Events\Vasily\Items\ToothExchange_Success" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="3.994750" DurationMax="3.994750">
+					<IncludedMemoryFiles>
+						<File Id="695774784" Language="SFX">
+							<ShortName>SFX\ExchangeAccepted.wav</ShortName>
+							<Path>SFX\SFX\ExchangeAccepted_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
