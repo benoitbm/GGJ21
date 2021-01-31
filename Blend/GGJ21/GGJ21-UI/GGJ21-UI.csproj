@@ -54,11 +54,11 @@
     <Compile Include="..\..\..\Assets\UI\MainWindow.xaml.cs">
       <Link>MainWindow.xaml.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\Assets\UI\Test.xaml.cs">
-      <Link>Test.xaml.cs</Link>
+    <Compile Include="..\..\..\Assets\UI\Minimap.xaml.cs">
+      <Link>Minimap.xaml.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\Assets\UI\UserControl1.xaml.cs">
-      <Link>UserControl1.xaml.cs</Link>
+    <Compile Include="..\..\..\Assets\UI\PlayerResources.xaml.cs">
+      <Link>PlayerResources.xaml.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -91,16 +91,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="..\..\..\Assets\UI\Test.xaml">
-      <Link>Test.xaml</Link>
+    <Page Include="..\..\..\Assets\UI\Minimap.xaml">
+      <Link>Minimap.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="..\..\..\Assets\UI\UserControl1.xaml">
-      <Link>UserControl1.xaml</Link>
+    <Page Include="..\..\..\Assets\UI\PlayerResources.xaml">
+      <Link>PlayerResources.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="..\..\..\Assets\UI\Assets\CharacterResources\coin.png">
+      <Link>Assets\UI\Assets\CharacterResources\coin.png</Link>
+    </Resource>
+    <Resource Include="..\..\..\Assets\UI\Assets\CharacterResources\tooth.png">
+      <Link>Assets\UI\Assets\CharacterResources\tooth.png</Link>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
