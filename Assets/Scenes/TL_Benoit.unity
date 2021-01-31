@@ -1938,14 +1938,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 17013283, guid: ef086f904e3d93e47ae642196a7e94a7, type: 3}
-      propertyPath: _renderFlags
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 17013283, guid: ef086f904e3d93e47ae642196a7e94a7, type: 3}
-      propertyPath: _isPPAAEnabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5651862435725585264, guid: ef086f904e3d93e47ae642196a7e94a7, type: 3}
       propertyPath: m_RootOrder
       value: 2
