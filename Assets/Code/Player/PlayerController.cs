@@ -30,9 +30,12 @@ public class PlayerController : MonoBehaviour
 
     bool m_TouchGround;
     bool m_RequestedJump;
+    bool m_Falling;
 
     [SerializeField, Tooltip("The aimed timescale when slowing down time to charge power")]
     float m_SlowdownTimescale = 0.5f;
+    [SerializeField, Tooltip("The slowdown speed Modifier")]
+    float m_SlowdownTimescaleSpeed = 1.0f;
     float m_WantedTimeScale = 1.0f;
 
     Vector2 m_DashDirection;
@@ -53,8 +56,8 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
-#region Getters
-    
+    #region Getters
+
     public Vector2 GetDashDirection() { return m_DashDirection; }
     public bool IsAiming() { return m_IsAiming; }
 
@@ -88,7 +91,7 @@ public class PlayerController : MonoBehaviour
         {
             m_IsAiming = true;
             CaptureMouse();
-            m_WantedTimeScale = Mathf.MoveTowards(m_WantedTimeScale, m_SlowdownTimescale, Time.unscaledDeltaTime * 0.5f);
+            m_WantedTimeScale = Mathf.MoveTowards(m_WantedTimeScale, m_SlowdownTimescale, Time.unscaledDeltaTime * m_SlowdownTimescaleSpeed);
             m_DashIntensity += Time.unscaledDeltaTime * m_DashChargingSpeed;
             m_DashIntensity = Mathf.Clamp(m_DashIntensity, 0.0f, m_DashMaxIntensity);
         }
@@ -129,6 +132,7 @@ public class PlayerController : MonoBehaviour
             if (m_RequestedJump)
             {
                 m_Velocity.y = Mathf.Sqrt(m_JumpHeight * Mathf.Abs(Physics2D.gravity.y));
+                m_Falling = false;
                 m_PlayerAnimationController.OnPlayerJump();
             }
         }
@@ -181,12 +185,38 @@ public class PlayerController : MonoBehaviour
             {
                 // Move back from the collision
                 transform.Translate(hitDistance.pointA - hitDistance.pointB);
-
                 // Checking if there's a ground below (90 degrees = bottom)
                 if (Vector2.Angle(hitDistance.normal, Vector2.up) < 90 && m_Velocity.y < 0)
                 {
                     m_TouchGround = true;
+                    m_Falling = false;
                 }
+            }
+
+            //Stopping Velocity if hit something while in air
+            if (!m_Falling && !m_TouchGround && (hit.tag == "Wall" || hit.tag == "Cieling"))
+            {
+                Vector2 stopVelocityOnAxis = Vector2.zero;
+                if (hit.tag == "Wall")
+                {
+                    Debug.Log("Impact A Wall");
+                    stopVelocityOnAxis = stopVelocityOnAxis + new Vector2(0, 1);
+                }
+                if (hit.tag == "Cieling")
+                {
+                    Debug.Log("Impact Cieling");
+                    stopVelocityOnAxis = stopVelocityOnAxis + new Vector2(1, 0);
+                }
+
+                //float changeInPositionX = Mathf.Abs(m_PreviousFramePosition.x - transform.position.x);
+                if (stopVelocityOnAxis != Vector2.zero)
+                {
+                    //Debug.Log(changeInPositionX);
+                    m_Velocity = m_Velocity* stopVelocityOnAxis;
+                    m_Falling = true;
+                    //SetSpeedModifier(0.3f, 0.5f);
+                }
+                m_PreviousFramePosition = transform.position;
             }
         }
         //Handle Ambience
@@ -199,16 +229,6 @@ public class PlayerController : MonoBehaviour
             AkSoundEngine.SetState("Ambince_State", "Outside");
         }
         m_IsInside = false;
-        //Stopping Velocity if hit something while in air
-        if (!m_TouchGround)
-        {
-            Vector3 changeInPosition = m_PreviousFramePosition - transform.position;
-            if (changeInPosition == Vector3.zero)
-            {
-                m_Velocity = Vector2.zero;
-            }
-            m_PreviousFramePosition = transform.position;
-        }
 
         // Physics update was done, we can clear the jump flag.
         m_RequestedJump = false;

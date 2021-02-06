@@ -59,7 +59,6 @@ public class FloatingTooth : MonoBehaviour
             counter += Time.deltaTime;
             //Fade from 1 to 0
             float alpha = Mathf.Lerp(1, 0, counter / duration);
-            Debug.Log(alpha);
 
             //Change alpha only
             MyRenderer.color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, alpha);

@@ -81,5 +81,9 @@ public class PlayerAnimationController : MonoBehaviour
     {
         animator.SetTrigger("Hurt");
     }
+    public void OnFalling()
+    {
+        animator.SetTrigger("Falling");
+    }
 }
 

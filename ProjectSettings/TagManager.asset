@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Appartment
+  - Wall
+  - Cieling
   layers:
   - Default
   - TransparentFX
