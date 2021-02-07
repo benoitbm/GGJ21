@@ -51,21 +51,6 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\Assets\UI\MainWindow.xaml.cs">
-      <Link>MainWindow.xaml.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Assets\UI\Minimap.xaml.cs">
-      <Link>Minimap.xaml.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Assets\UI\PlayerResources.xaml.cs">
-      <Link>PlayerResources.xaml.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Assets\UI\ResultScreen.xaml.cs">
-      <Link>ResultScreen.xaml.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\Assets\UI\Timer.xaml.cs">
-      <Link>Timer.xaml.cs</Link>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -92,39 +77,38 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="..\..\..\Assets\UI\MainWindow.xaml">
+    <Page Include="..\..\..\Assets\Resources\UI\MainWindow.xaml">
       <Link>MainWindow.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="..\..\..\Assets\UI\Minimap.xaml">
+    <Page Include="..\..\..\Assets\Resources\UI\Minimap.xaml">
       <Link>Minimap.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="..\..\..\Assets\UI\PlayerResources.xaml">
+    <Page Include="..\..\..\Assets\Resources\UI\PlayerResources.xaml">
       <Link>PlayerResources.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="..\..\..\Assets\UI\ResultScreen.xaml">
+    <Page Include="..\..\..\Assets\Resources\UI\ResultScreen.xaml">
       <Link>ResultScreen.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="..\..\..\Assets\UI\Timer.xaml">
+    <Page Include="..\..\..\Assets\Resources\UI\Timer.xaml">
       <Link>Timer.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Resource Include="..\..\..\Assets\UI\Assets\CharacterResources\coin.png">
-      <Link>Assets\UI\Assets\CharacterResources\coin.png</Link>
+    <Resource Include="..\..\..\Assets\Resources\UI\Assets\CharacterResources\coin.png">
+      <Link>Assets\Resources\UI\Assets\CharacterResources\coin.png</Link>
     </Resource>
-    <Resource Include="..\..\..\Assets\UI\Assets\CharacterResources\tooth.png">
-      <Link>Assets\UI\Assets\CharacterResources\tooth.png</Link>
+    <Resource Include="..\..\..\Assets\Resources\UI\Assets\CharacterResources\tooth.png">
+      <Link>Assets\Resources\UI\Assets\CharacterResources\tooth.png</Link>
     </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

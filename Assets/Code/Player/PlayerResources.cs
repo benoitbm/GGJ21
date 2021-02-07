@@ -11,8 +11,10 @@ public class PlayerResources : MonoBehaviour
 
     // Number of teeth collected
     int m_Score = 0;
+    int m_MaxScore;
 
     DCCharacterResources m_DC;
+    GameMaster m_GM;
     #endregion
 
     #region Getters
@@ -23,7 +25,14 @@ public class PlayerResources : MonoBehaviour
 #region Setters
     public void RefillMoney() { m_CurrentMoney = m_MaximumMoney; m_DC.SetMoney(m_CurrentMoney); }
     public void RemoveMoney(int delta = 1) { m_CurrentMoney -= delta; m_DC.SetMoney(m_CurrentMoney); }
-    public void IncreaseScore(int delta = 1) { m_Score += delta; m_DC.SetScore(m_Score); }
+    public void IncreaseScore(int delta = 1) 
+    { 
+        m_Score += delta; 
+        m_DC.SetScore(m_Score);
+
+        if (m_Score >= m_MaxScore)
+            m_GM.RequestGameEnd();
+    }
     #endregion
 
 #region Init
@@ -33,7 +42,17 @@ public class PlayerResources : MonoBehaviour
         m_DC = (DCCharacterResources)FindObjectOfType<ViewModelManager>().GetComponent<ViewModelManager>().CreateWidget(gui.EWidgetType.CharacterResources);
         RefillMoney();
 
-        FindObjectOfType<GameMaster>().GetComponent<GameMaster>().RequestGameTimer(false);
+        m_GM = FindObjectOfType<GameMaster>().GetComponent<GameMaster>();
+        // Only time limit for the moment, update stuff below 
+        m_GM.RequestGameTimer(false);
+
+        StartCoroutine(CountMaxScore());
     }
     #endregion
+
+    IEnumerator CountMaxScore()
+    {
+        yield return new WaitForEndOfFrame();
+        m_MaxScore = FindObjectsOfType<InteractableBed>().Length;
+    }
 }

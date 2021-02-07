@@ -17,7 +17,7 @@ public class PlacementRandomaizer : MonoBehaviour
     public bool randomFlip = true;
     public float chanceToShow = 100f;
 
-    void Start()
+    void Awake()
     {
         Vector3 newPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         float randomPositionx = GetRandomPosition(XRandomPlacementRangeList);
@@ -58,11 +58,5 @@ public class PlacementRandomaizer : MonoBehaviour
             return Random.Range(randomPlacementRangeList[i].minRange, randomPlacementRangeList[i].maxRange);
         }
         return 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
