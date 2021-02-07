@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField, Range(1,100), Tooltip("The minimum required percentage to trigger a dash")]
     int m_RequiredPercentageToDash = 20;
 
+    DCVignette m_DCVignette;
     #endregion
 
     #region Getters
@@ -81,6 +82,7 @@ public class PlayerController : MonoBehaviour
         m_PlayerCollider = GetComponent<BoxCollider2D>();
         m_PlayerInteractions = GetComponent<PlayerInteractions>();
         m_PlayerAnimationController = GetComponentInChildren<PlayerAnimationController>();
+        m_DCVignette = (DCVignette)FindObjectOfType<ViewModelManager>().GetComponent<ViewModelManager>().CreateWidget(gui.EWidgetType.Vignette);
     }
 #endregion
 
@@ -234,7 +236,13 @@ public class PlayerController : MonoBehaviour
         // Physics update was done, we can clear the jump flag.
         m_RequestedJump = false;
     }
-#endregion
+
+    private void LateUpdate()
+    {
+        float desiredOpacity = 1.0f - ((m_WantedTimeScale - m_SlowdownTimescale) / (1.0f - m_SlowdownTimescale));
+        m_DCVignette.UpdateOpacity(desiredOpacity);
+    }
+    #endregion
 
     private void CaptureMouse()
     {

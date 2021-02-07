@@ -107,7 +107,7 @@ MonoBehaviour:
     ParentPath: Vasily
     guid: 92c7119a19e7c44d916603d058e1cd1e
     GuidInternal: 
-    m_lastTime: -8585888785705188781
+    m_lastTime: -8585888781986816541
     List:
     - name: ATM_PlayerFull
       guid: e89bf08d70afc5478979f444c46500d6
@@ -120,9 +120,9 @@ MonoBehaviour:
       - ElementName: ATM_PlayerFull
         ObjectType: 3
       Path: Vasily\Items\ATM_PlayerFull
-      maxAttenuation: 30
-      maxDuration: 1.000917
-      minDuration: 1.000917
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ATM_Use
       guid: 6aed53d4e7821e46b6812eefb3d985b0
       id: 1178451283
@@ -134,9 +134,9 @@ MonoBehaviour:
       - ElementName: ATM_Use
         ObjectType: 3
       Path: Vasily\Items\ATM_Use
-      maxAttenuation: 30
-      maxDuration: 2.000958
-      minDuration: 2.000958
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Character_Foley
       guid: 72b992ca3fc1b4439c14943724b9c913
       id: 1567637474
@@ -160,9 +160,9 @@ MonoBehaviour:
       - ElementName: Footstep
         ObjectType: 3
       Path: Vasily\Character_Foley\Footstep
-      maxAttenuation: 30
-      maxDuration: 1
-      minDuration: 1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: GlassBreak
       guid: 9478faf2e888d24983e442b72f62a1f6
       id: 2419553536
@@ -172,9 +172,9 @@ MonoBehaviour:
       - ElementName: GlassBreak
         ObjectType: 3
       Path: Vasily\GlassBreak
-      maxAttenuation: 30
-      maxDuration: 4.621312
-      minDuration: 1.498307
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: GlassShard
       guid: d4c7a221320d3d40a0700d3af547f77f
       id: 3627491425
@@ -184,9 +184,9 @@ MonoBehaviour:
       - ElementName: GlassShard
         ObjectType: 3
       Path: Vasily\GlassShard
-      maxAttenuation: 30
-      maxDuration: 0.629961
-      minDuration: 0.445449
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Items
       guid: 549884937f708c4ca83ebd543552dd7c
       id: 2151963051
@@ -210,9 +210,9 @@ MonoBehaviour:
       - ElementName: Landing
         ObjectType: 3
       Path: Vasily\Character_Foley\Landing
-      maxAttenuation: 30
-      maxDuration: 0.272601
-      minDuration: 0.254057
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Amb_Global_Blend
       guid: 0d1f8138f2471d41938bbf9c227e3c8c
       id: 1345175672
@@ -234,7 +234,7 @@ MonoBehaviour:
       - ElementName: Shout_Charge
         ObjectType: 3
       Path: Vasily\Shout_Charge
-      maxAttenuation: 30
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Shout_Inhale
@@ -246,9 +246,9 @@ MonoBehaviour:
       - ElementName: Shout_Inhale
         ObjectType: 3
       Path: Vasily\Shout_Inhale
-      maxAttenuation: 30
-      maxDuration: 2.351382
-      minDuration: 1.866293
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Shout_Shout
       guid: 7346833a3e77e847bae406db044b641e
       id: 1912761094
@@ -258,9 +258,9 @@ MonoBehaviour:
       - ElementName: Shout_Shout
         ObjectType: 3
       Path: Vasily\Shout_Shout
-      maxAttenuation: 30
-      maxDuration: 1.749633
-      minDuration: 1.512257
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Swhoosh
       guid: 0c9baa353ed68f40beb47e77f87860cc
       id: 1803035582
@@ -272,9 +272,9 @@ MonoBehaviour:
       - ElementName: Swhoosh
         ObjectType: 3
       Path: Vasily\Character_Foley\Swhoosh
-      maxAttenuation: 30
-      maxDuration: 1
-      minDuration: 1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ToothExchange_Fail
       guid: 190503d9fad2bb458fedeb832bb16ef4
       id: 826597249
@@ -286,9 +286,9 @@ MonoBehaviour:
       - ElementName: ToothExchange_Fail
         ObjectType: 3
       Path: Vasily\Items\ToothExchange_Fail
-      maxAttenuation: 30
-      maxDuration: 2.000958
-      minDuration: 2.000958
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ToothExchange_Success
       guid: 29a6e12a2763c24d94e5ea4a21bfa640
       id: 1293015998
@@ -300,9 +300,9 @@ MonoBehaviour:
       - ElementName: ToothExchange_Success
         ObjectType: 3
       Path: Vasily\Items\ToothExchange_Success
-      maxAttenuation: 30
-      maxDuration: 3.99475
-      minDuration: 3.99475
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

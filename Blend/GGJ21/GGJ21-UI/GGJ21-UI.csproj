@@ -66,6 +66,9 @@
     <Compile Include="..\..\..\Assets\Resources\UI\Timer.xaml.cs">
       <Link>Timer.xaml.cs</Link>
     </Compile>
+    <Compile Include="..\..\..\Assets\Resources\UI\Vignette.xaml.cs">
+      <Link>Vignette.xaml.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -129,6 +132,11 @@
     </Page>
     <Page Include="..\..\..\Assets\Resources\UI\Timer.xaml">
       <Link>Timer.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\Assets\Resources\UI\Vignette.xaml">
+      <Link>Vignette.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

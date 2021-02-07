@@ -1,6 +1,6 @@
 ﻿#if UNITY_5_3_OR_NEWER
 #define NOESIS
-using Noesis;
+   using Noesis;
 #else
 using System;
 using System.Windows;
@@ -10,11 +10,11 @@ using System.Windows.Controls;
 namespace GGJ21_UI
 {
     /// <summary>
-    /// Interaction logic for PlayerResources.xaml
+    /// Interaction logic for Vignette.xaml
     /// </summary>
-    public partial class PlayerResources : UserControl
+    public partial class Vignette : UserControl
     {
-        public PlayerResources()
+        public Vignette()
         {
             this.InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace GGJ21_UI
 #if NOESIS
         private void InitializeComponent()
         {
-            Noesis.GUI.LoadComponent(this, "Assets/UI/PlayerResources.xaml");
+            Noesis.GUI.LoadComponent(this, "Assets/UI/Vignette.xaml");
         }
 #endif
     }

@@ -9,6 +9,7 @@ namespace gui
         MainMenu = 0,
         Credits,
 
+        Vignette,
         CharacterResources,
         Minimap,
         Timer,
@@ -33,7 +34,7 @@ public class ViewModelManager : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(this);
-        Debug.Assert((int)gui.EWidgetType.MAX == 9, "New widget type added, it needs to be added");
+        Debug.Assert((int)gui.EWidgetType.MAX == 10, "New widget type added, it needs to be added");
         LoadedWidgets = new Dictionary<gui.EWidgetType, DCWidget>();
         NewWidgets = new List<DCWidget>();
         m_CurrentResolution = new Vector2(Screen.width, Screen.height);
@@ -120,6 +121,10 @@ public class ViewModelManager : MonoBehaviour
 
                 case gui.EWidgetType.Results:
                     newWidget = gameObject.AddComponent(typeof(DCResults)) as DCWidget;
+                    break;
+
+                case gui.EWidgetType.Vignette:
+                    newWidget = gameObject.AddComponent(typeof(DCVignette)) as DCWidget;
                     break;
 
                 default:

@@ -22,7 +22,7 @@ namespace GGJ21_UI
 #if NOESIS
         private void InitializeComponent()
         {
-            Noesis.GUI.LoadComponent(this, "Assets/UI/Test.xaml");
+            Noesis.GUI.LoadComponent(this, "Assets/UI/Timer.xaml");
         }
 #endif
     }
