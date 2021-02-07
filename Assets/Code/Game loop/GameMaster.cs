@@ -11,7 +11,10 @@ public class GameMaster : MonoBehaviour
     // Score parameters
     float m_RemainingTime;
     int m_Score;
+    int m_MaxScore;
     bool m_WasTimeAttack;
+
+    public void SetMaxScore(int maxScore) { m_MaxScore = maxScore; }
 
     void Awake()
     {
@@ -42,10 +45,11 @@ public class GameMaster : MonoBehaviour
         SceneManager.LoadScene("ResultScreen");
     }
 
-    public void GetResults(out float remainTime, out int score, out bool timeAttack)
+    public void GetResults(out float remainTime, out int score, out int maxScore, out bool timeAttack)
     {
         remainTime = m_RemainingTime;
         score = m_Score;
+        maxScore = m_MaxScore;
         timeAttack = m_WasTimeAttack;
     }
 }

@@ -54,5 +54,6 @@ public class PlayerResources : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
         m_MaxScore = FindObjectsOfType<InteractableBed>().Length;
+        m_GM.SetMaxScore(m_MaxScore);
     }
 }

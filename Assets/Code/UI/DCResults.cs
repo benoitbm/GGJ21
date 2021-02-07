@@ -15,6 +15,9 @@ public class DCResults : DCWidget, INotifyPropertyChanged
     int m_Score;
     public int Score { get => m_Score; }
 
+    int m_MaxScore;
+    public int MaxScore { get => m_MaxScore; }
+
     bool m_IsTimeAttack;
     public bool IsTimeAttack { get => m_IsTimeAttack; }
 
@@ -39,19 +42,21 @@ public class DCResults : DCWidget, INotifyPropertyChanged
         Application.Quit();
     }
 
-    public void SetResultData(float time, int score, bool timeAttack)
+    public void SetResultData(float time, int score, int maxScore, bool timeAttack)
     {
         m_Minutes = Mathf.FloorToInt(time / 60.0f);
         m_Seconds = Mathf.FloorToInt(time % 60);
         m_Milliseconds = Mathf.FloorToInt((time % 1.0f) * 100);
 
         m_Score = score;
+        m_MaxScore = maxScore;
         m_IsTimeAttack = timeAttack;
 
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Minutes"));
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Seconds"));
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Milliseconds"));
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Score"));
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("MaxScore"));
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("IsTimeAttack"));
     }
 

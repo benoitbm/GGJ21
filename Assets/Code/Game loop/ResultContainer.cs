@@ -11,10 +11,10 @@ public class ResultContainer : MonoBehaviour
         GameMaster gameMaster = FindObjectOfType<GameMaster>().GetComponent<GameMaster>();
 
         float remainTime;
-        int score;
+        int score, maxScore;
         bool wasTimeAttack;
 
-        gameMaster.GetResults(out remainTime, out score, out wasTimeAttack);
-        dc.SetResultData(remainTime, score, wasTimeAttack);
+        gameMaster.GetResults(out remainTime, out score, out maxScore, out wasTimeAttack);
+        dc.SetResultData(remainTime, score, maxScore, wasTimeAttack);
     }
 }
