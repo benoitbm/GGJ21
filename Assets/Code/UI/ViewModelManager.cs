@@ -27,6 +27,8 @@ public class ViewModelManager : MonoBehaviour
 {
     Dictionary<gui.EWidgetType, DCWidget> LoadedWidgets;
     List<DCWidget> NewWidgets;
+    Vector2 m_CurrentResolution;
+    bool m_NeedsRatioUpdate;
 
     void Awake()
     {
@@ -34,7 +36,68 @@ public class ViewModelManager : MonoBehaviour
         Debug.Assert((int)gui.EWidgetType.MAX == 9, "New widget type added, it needs to be added");
         LoadedWidgets = new Dictionary<gui.EWidgetType, DCWidget>();
         NewWidgets = new List<DCWidget>();
+        m_CurrentResolution = new Vector2(Screen.width, Screen.height);
+        m_NeedsRatioUpdate = true;
     }
+
+    #region Updates
+    private void Update()
+    {
+        if (m_CurrentResolution.x != Screen.width || m_CurrentResolution.y != Screen.height)
+        {
+            m_CurrentResolution = new Vector2(Screen.width, Screen.height);
+            m_NeedsRatioUpdate = true;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (NewWidgets.Count > 0 || m_NeedsRatioUpdate)
+        {
+            if (!Camera.main)
+                return;
+
+            NoesisView noesisView = Camera.main.GetComponent<NoesisView>();
+            if (!noesisView)
+                return;
+
+            if (m_NeedsRatioUpdate)
+            {
+                Noesis.Grid root = (Noesis.Grid)noesisView.Content.FindName("ContentRoot");
+                Debug.Assert(root != null, "No ContentRoot found when updating ratio");
+                if (root != null)
+                {
+                    root.Width = 1080 * m_CurrentResolution.x / m_CurrentResolution.y;
+                    m_NeedsRatioUpdate = false;
+                }
+
+            }
+
+            if (NewWidgets.Count > 0)
+            {
+                foreach (DCWidget widget in NewWidgets)
+                {
+                    gui.EWidgetType widgetType = widget.GetWidgetType();
+                    widget.Initialize(noesisView);
+
+                    if (widget.HideStatesBelow())
+                    {
+                        for (int i = 0; i < (int)widgetType; ++i)
+                        {
+                            gui.EWidgetType iType = (gui.EWidgetType)i;
+                            if (LoadedWidgets.ContainsKey(iType))
+                            {
+                                LoadedWidgets[iType].ChangeVisibility(Noesis.Visibility.Collapsed);
+                            }
+                        }
+                    }
+                }
+
+                NewWidgets.Clear();
+            }
+        }
+    }
+#endregion
 
     public DCWidget CreateWidget(gui.EWidgetType widgetType)
     {
@@ -94,37 +157,4 @@ public class ViewModelManager : MonoBehaviour
             Destroy(widget);
         }
     }
-
-    private void LateUpdate()
-    {
-        if (NewWidgets.Count > 0)
-        {
-            if (!Camera.main)
-                return;
-
-            NoesisView noesisView = Camera.main.GetComponent<NoesisView>();
-            if (!noesisView)
-                return;
-            foreach (DCWidget widget in NewWidgets)
-            {
-                gui.EWidgetType widgetType = widget.GetWidgetType();
-                widget.Initialize(noesisView);
-
-                if (widget.HideStatesBelow())
-                {
-                    for (int i = 0; i < (int)widgetType; ++i)
-                    {
-                        gui.EWidgetType iType = (gui.EWidgetType)i;
-                        if (LoadedWidgets.ContainsKey(iType))
-                        {
-                            LoadedWidgets[iType].ChangeVisibility(Noesis.Visibility.Collapsed);
-                        }
-                    }
-                }
-            }
-
-            NewWidgets.Clear();
-        }
-    }
-
 }
