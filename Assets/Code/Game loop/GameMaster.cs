@@ -65,6 +65,7 @@ public class GameMaster : MonoBehaviour
     {
         ViewModelManager viewModel = FindObjectOfType<ViewModelManager>().GetComponent<ViewModelManager>();
         viewModel.RemoveWidget(gui.EWidgetType.MainMenu);
+        viewModel.RemoveWidget(gui.EWidgetType.Results);
 
         SceneManager.LoadScene("Main_CityLevel");
     }

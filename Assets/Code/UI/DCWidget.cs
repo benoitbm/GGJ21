@@ -63,7 +63,7 @@ public class DCWidget : MonoBehaviour
         Application.Quit();
     }
 
-    void OnLoadLevelCommand(object param)
+    protected virtual void OnLoadLevelCommand(object param)
     {
         GameMaster gm = FindObjectOfType<GameMaster>().GetComponent<GameMaster>();
         // For the moment, just start the game, gotta work on options to be passed.
