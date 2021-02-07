@@ -107,7 +107,7 @@ MonoBehaviour:
     ParentPath: Vasily
     guid: 92c7119a19e7c44d916603d058e1cd1e
     GuidInternal: 
-    m_lastTime: -8585894783704386741
+    m_lastTime: -8585888785705188781
     List:
     - name: ATM_PlayerFull
       guid: e89bf08d70afc5478979f444c46500d6
@@ -247,8 +247,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Vasily\Shout_Inhale
       maxAttenuation: 30
-      maxDuration: 0.400143
-      minDuration: 0.268469
+      maxDuration: 2.351382
+      minDuration: 1.866293
     - name: Shout_Shout
       guid: 7346833a3e77e847bae406db044b641e
       id: 1912761094

@@ -25,7 +25,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4041602636">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3327170645">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -114,11 +114,11 @@
 					<IncludedMemoryFiles>
 						<File Id="197644207" Language="SFX">
 							<ShortName>SFX\CharacterFoley\Landing1.wav</ShortName>
-							<Path>SFX\SFX\CharacterFoley\Landing1_B71130F1.wem</Path>
+							<Path>SFX\SFX\CharacterFoley\Landing1_D236E117.wem</Path>
 						</File>
 						<File Id="280085697" Language="SFX">
 							<ShortName>SFX\CharacterFoley\Landing2.wav</ShortName>
-							<Path>SFX\SFX\CharacterFoley\Landing2_CEC911A1.wem</Path>
+							<Path>SFX\SFX\CharacterFoley\Landing2_44048965.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -188,7 +188,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2210254522" Name="Shout_Inhale" ObjectPath="\Events\Vasily\Shout_Inhale" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.268469" DurationMax="0.400143">
+				<Event Id="2210254522" Name="Shout_Inhale" ObjectPath="\Events\Vasily\Shout_Inhale" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.866293" DurationMax="2.351382">
 					<IncludedMemoryFiles>
 						<File Id="261955874" Language="SFX">
 							<ShortName>SFX\Breath4.wav</ShortName>
@@ -201,6 +201,10 @@
 						<File Id="682873521" Language="SFX">
 							<ShortName>SFX\Breath3.wav</ShortName>
 							<Path>SFX\SFX\Breath3_10C4C929.wem</Path>
+						</File>
+						<File Id="879319917" Language="SFX">
+							<ShortName>SFX\EnterSlowMo.wav</ShortName>
+							<Path>SFX\SFX\EnterSlowMo_3CDE0CE7.wem</Path>
 						</File>
 						<File Id="928306418" Language="SFX">
 							<ShortName>SFX\Breath1.wav</ShortName>

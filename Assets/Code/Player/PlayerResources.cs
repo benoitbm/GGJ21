@@ -20,6 +20,7 @@ public class PlayerResources : MonoBehaviour
     #region Getters
     public int GetCurrentMoney() { return m_CurrentMoney; }
     public int GetCurrentScore() { return m_Score; }
+    public int GetMaximumMoney() { return m_MaximumMoney; }
     #endregion
 
 #region Setters

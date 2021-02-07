@@ -5,6 +5,35 @@
 			<ChildrenList>
 				<ActorMixer Name="Ambience" ID="{84E6C5EB-0754-4D44-8A69-6708F2DB6128}" ShortID="1353918">
 					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{5F4BB618-0CB8-4768-9EE7-4EA87EC902DB}" ShortID="715476593">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Shout_Charge" ID="{2F1E4A97-21EB-4C19-BEB0-904D25CA68AF}" WorkUnitID="{435C9060-61DF-4BA7-99F5-081188DE515B}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{ED868A00-BD37-4F1D-8C75-F5D56948D53B}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-800</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-4</Value>
@@ -1988,7 +2017,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>600</YPos>
+																<YPos>500</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -2379,6 +2408,56 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<Sound Name="EnterSlowMo" ID="{A6A793F6-EB86-4CC2-B5FF-2199B1C173C1}" ShortID="1059720954">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>1820</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8719C2D7-1F55-4463-B778-27CF734F37FC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-26</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{63D62949-CA54-4DD6-97A9-2AD62C3349D2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C3D34AD0-C9D4-4E6F-B97B-D415A2655EC0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EnterSlowMo" ID="{C5645620-E3E4-48AC-BF50-BBDB14DCC956}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.693888647426982"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0902619378766806"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SFX\EnterSlowMo.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="879319917"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="EnterSlowMo" ID="{C5645620-E3E4-48AC-BF50-BBDB14DCC956}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{0B62A560-1066-490D-B6E1-BF6F32B23214}"/>

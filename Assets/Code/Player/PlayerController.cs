@@ -130,15 +130,14 @@ public class PlayerController : MonoBehaviour
         if (m_TouchGround)
         {
             m_Velocity.y = 0;
-
-            if (m_RequestedJump)
-            {
-                m_Velocity.y = Mathf.Sqrt(m_JumpHeight * Mathf.Abs(Physics2D.gravity.y));
-                m_Falling = false;
-                m_PlayerAnimationController.OnPlayerJump();
-            }
         }
 
+        if (m_RequestedJump && (m_TouchGround || m_Falling))
+        {
+            m_Velocity.y = Mathf.Sqrt(m_JumpHeight * Mathf.Abs(Physics2D.gravity.y));
+            m_Falling = false;
+            m_PlayerAnimationController.OnPlayerJump();
+        }
         float speedModif = 1.0f;
         if (m_SpeedModifierTimer > 0.0f)
         {
@@ -201,12 +200,12 @@ public class PlayerController : MonoBehaviour
                 Vector2 stopVelocityOnAxis = Vector2.zero;
                 if (hit.tag == "Wall")
                 {
-                    Debug.Log("Impact A Wall");
+                    //Debug.Log("Impact A Wall");
                     stopVelocityOnAxis = stopVelocityOnAxis + new Vector2(0, 1);
                 }
                 if (hit.tag == "Cieling")
                 {
-                    Debug.Log("Impact Cieling");
+                    //Debug.Log("Impact Cieling");
                     stopVelocityOnAxis = stopVelocityOnAxis + new Vector2(1, 0);
                 }
 
@@ -252,6 +251,7 @@ public class PlayerController : MonoBehaviour
         {
             m_Velocity = (m_DashDirection * m_DashIntensity);
             m_TouchGround = false;
+            m_Falling = true;
         }
 
         m_DashIntensity = 0.0f;

@@ -45,6 +45,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{B9133EDF-735F-49CB-9FFB-5B316042F04B}" ShortID="1042531633">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnterSlowMo" ID="{A6A793F6-EB86-4CC2-B5FF-2199B1C173C1}" WorkUnitID="{5CD2E7C6-3DD5-4B03-BBE6-DEEC73319957}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{1211EFAD-5D5F-4F14-93F9-756884FDF1EA}" ShortID="424577306">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="41"/>
