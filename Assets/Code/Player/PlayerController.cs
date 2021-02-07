@@ -120,10 +120,12 @@ public class PlayerController : MonoBehaviour
             // No input, natural deceleration
             m_Velocity.x = Mathf.MoveTowards(m_Velocity.x, 0.0f, deceleration * Time.deltaTime);
         }
+
+        UpdateMovement();
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void UpdateMovement()
     {
         if (m_TouchGround)
         {
@@ -140,15 +142,15 @@ public class PlayerController : MonoBehaviour
         float speedModif = 1.0f;
         if (m_SpeedModifierTimer > 0.0f)
         {
-            m_SpeedModifierTimer -= Time.fixedDeltaTime;
+            m_SpeedModifierTimer -= Time.deltaTime;
             speedModif = m_SpeedModifier;
             m_Velocity *= (1.0f - m_SpeedModifier);
         }
 
         // Applying the gravity
-        m_Velocity.y += Physics2D.gravity.y * Time.fixedDeltaTime;
+        m_Velocity.y += Physics2D.gravity.y * Time.deltaTime;
 
-        transform.Translate(m_Velocity * Time.fixedDeltaTime * speedModif);
+        transform.Translate(m_Velocity * Time.deltaTime * speedModif);
 
         // Hit detection part
         m_TouchGround = false;
