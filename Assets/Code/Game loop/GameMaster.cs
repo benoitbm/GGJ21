@@ -37,6 +37,7 @@ public class GameMaster : MonoBehaviour
         viewModel.RemoveWidget(gui.EWidgetType.Timer);
         viewModel.RemoveWidget(gui.EWidgetType.Minimap);
         viewModel.RemoveWidget(gui.EWidgetType.CharacterResources);
+        viewModel.RemoveWidget(gui.EWidgetType.Vignette);
         Destroy(comp);
 
         PlayerResources playerResources = FindObjectOfType<PlayerResources>().GetComponent<PlayerResources>();
