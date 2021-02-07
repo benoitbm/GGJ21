@@ -43,6 +43,7 @@ public class PlayerResources : MonoBehaviour
         m_DC = (DCCharacterResources)FindObjectOfType<ViewModelManager>().GetComponent<ViewModelManager>().CreateWidget(gui.EWidgetType.CharacterResources);
         RefillMoney();
 
+        var truc = FindObjectsOfType<GameMaster>();
         m_GM = FindObjectOfType<GameMaster>().GetComponent<GameMaster>();
         // Only time limit for the moment, update stuff below 
         m_GM.RequestGameTimer(false);

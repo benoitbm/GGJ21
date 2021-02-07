@@ -21,26 +21,11 @@ public class DCResults : DCWidget, INotifyPropertyChanged
     bool m_IsTimeAttack;
     public bool IsTimeAttack { get => m_IsTimeAttack; }
 
-    // Should be in DCWidget, to be updated post GGJ
-    public ui.DelegateCommand QuitCommand { get; private set; }
-
-    public DCResults()
-    {
-        QuitCommand = new ui.DelegateCommand(this.OnQuitCommand);
-    }
-
     #region Getters
     public override gui.EWidgetType GetWidgetType() { return gui.EWidgetType.Results; }
 
     protected override string GetFileName() { return "ResultScreen"; }
     #endregion
-
-    // Should be in DCWidget too.
-    void OnQuitCommand(object param)
-    {
-        //Should show a confirmation
-        Application.Quit();
-    }
 
     public void SetResultData(float time, int score, int maxScore, bool timeAttack)
     {

@@ -33,6 +33,13 @@ public class ViewModelManager : MonoBehaviour
 
     void Awake()
     {
+        // To prevent duplicates for that kind of thing
+        if (FindObjectsOfType<ViewModelManager>().Length > 1)
+        {
+            DestroyImmediate(gameObject);
+            return;
+        }
+
         DontDestroyOnLoad(this);
         Debug.Assert((int)gui.EWidgetType.MAX == 10, "New widget type added, it needs to be added");
         LoadedWidgets = new Dictionary<gui.EWidgetType, DCWidget>();
@@ -68,7 +75,7 @@ public class ViewModelManager : MonoBehaviour
                 Debug.Assert(root != null, "No ContentRoot found when updating ratio");
                 if (root != null)
                 {
-                    root.Width = 1080 * m_CurrentResolution.x / m_CurrentResolution.y;
+                    root.Width = Mathf.RoundToInt(1080 * m_CurrentResolution.x / m_CurrentResolution.y);
                     m_NeedsRatioUpdate = false;
                 }
 
@@ -107,6 +114,10 @@ public class ViewModelManager : MonoBehaviour
             DCWidget newWidget;
             switch (widgetType)
             {
+                case gui.EWidgetType.MainMenu:
+                    newWidget = gameObject.AddComponent(typeof(DCMainMenu)) as DCWidget;
+                    break;
+
                 case gui.EWidgetType.CharacterResources:
                     newWidget = gameObject.AddComponent(typeof(DCCharacterResources)) as DCWidget;
                     break;

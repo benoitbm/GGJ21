@@ -19,9 +19,17 @@ public class DCWidget : MonoBehaviour
 
 #region Setters
     public void ChangeVisibility(Noesis.Visibility vis) { m_DC.Visibility = vis; }
-#endregion
+    #endregion
 
-    // Start is called before the first frame update
+    public ui.DelegateCommand QuitCommand { get; private set; }
+    public ui.DelegateCommand LoadLevelCommand { get; private set; }
+
+    void Awake()
+    {
+        QuitCommand = new ui.DelegateCommand(this.OnQuitCommand);
+        LoadLevelCommand = new ui.DelegateCommand(this.OnLoadLevelCommand);
+    }
+
     public virtual void Initialize(NoesisView panel)
     {
         m_View = panel;
@@ -39,7 +47,6 @@ public class DCWidget : MonoBehaviour
         m_DC.DataContext = this;
     }
 
-    // Update is called once per frame
     public virtual void Close(NoesisView panel)
     {
         Noesis.Grid root = (Noesis.Grid)panel.Content.FindName("ContentRoot");
@@ -48,4 +55,19 @@ public class DCWidget : MonoBehaviour
             root.Children.Remove(m_DC);
         }
     }
+
+    #region Commands
+    void OnQuitCommand(object param)
+    {
+        //Should show a confirmation
+        Application.Quit();
+    }
+
+    void OnLoadLevelCommand(object param)
+    {
+        GameMaster gm = FindObjectOfType<GameMaster>().GetComponent<GameMaster>();
+        // For the moment, just start the game, gotta work on options to be passed.
+        gm.RequestStartGame();
+    }
+    #endregion
 }

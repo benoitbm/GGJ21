@@ -18,6 +18,13 @@ public class GameMaster : MonoBehaviour
 
     void Awake()
     {
+        // To prevent duplicates for that kind of thing
+        if (FindObjectsOfType<GameMaster>().Length > 1)
+        {
+            DestroyImmediate(gameObject);
+            return;
+        }
+
         DontDestroyOnLoad(this);
     }
 
@@ -52,5 +59,13 @@ public class GameMaster : MonoBehaviour
         score = m_Score;
         maxScore = m_MaxScore;
         timeAttack = m_WasTimeAttack;
+    }
+
+    public void RequestStartGame()
+    {
+        ViewModelManager viewModel = FindObjectOfType<ViewModelManager>().GetComponent<ViewModelManager>();
+        viewModel.RemoveWidget(gui.EWidgetType.MainMenu);
+
+        SceneManager.LoadScene("Main_CityLevel");
     }
 }
