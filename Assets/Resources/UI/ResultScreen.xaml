@@ -6,11 +6,38 @@
              xmlns:local="clr-namespace:GGJ21_UI"
              mc:Ignorable="d" 
              d:DesignHeight="1080" d:DesignWidth="1920">
+    <UserControl.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/GGJ21-UI;component/Assets/Resources/UI/Library/DefaultTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <Style x:Key="CreditDefaultTextStyle" TargetType="TextBlock">
+                <Setter Property="Foreground" Value="{StaticResource TA_PrimaryColor}"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="CreditPersonTextStyle" TargetType="TextBlock" BasedOn="{StaticResource CreditDefaultTextStyle}">
+                <Setter Property="FontSize" Value="{StaticResource TA_IntermediateFontSize}"/>
+            </Style>
+
+            <Style x:Key="CreditPersonSubtextStyle" TargetType="TextBlock" BasedOn="{StaticResource CreditDefaultTextStyle}">
+                <Setter Property="FontSize" Value="{StaticResource TA_DefaultFontSize}"/>
+            </Style>
+
+            <Style x:Key="CreditScoreTextStyle" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="{StaticResource TA_BigFontSize}"/>
+                <Setter Property="Foreground" Value="{StaticResource TA_PrimaryColor}"/>
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
     <Grid>
         <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Remaining time:" FontSize="52" Foreground="White"/>
-                <TextBlock FontSize="52" Foreground="White" Margin="5,0,0,0">
+                <TextBlock Text="Remaining time:" Style="{StaticResource CreditScoreTextStyle}"/>
+                <TextBlock Style="{StaticResource CreditScoreTextStyle}" Margin="5,0,0,0">
                     <Run Text="{Binding Minutes, StringFormat='D2'}"/>
                     <Run Text=":"/>
                     <Run Text="{Binding Seconds, StringFormat='D2'}"/>
@@ -20,34 +47,40 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="20,40,0,0">
-                <TextBlock Text="Score:" FontSize="52" Foreground="White"/>
-                <TextBlock Text="{Binding Score}" FontSize="52" Foreground="White" Margin="5,0,0,0"/>
+                <TextBlock Text="Score:" Style="{StaticResource CreditScoreTextStyle}"/>
+                <TextBlock Text="{Binding Score}" Style="{StaticResource CreditScoreTextStyle}" Margin="5,0,0,0"/>
             </StackPanel>
         </StackPanel>
 
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,50,0" Background="#70000000">
-            <TextBlock Text="Tooth Ahead" FontSize="72" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" FontWeight="Bold"/>
-            <TextBlock Text="GGJ Build Edition" FontSize="32" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" FontStyle="Italic"/>
-            <TextBlock Text="Created by:" FontSize="42" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,40,0,0"/>
-            <TextBlock Text="Benoit BOYER" FontSize="42" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
-            <TextBlock Text="Quebec - Canada" FontSize="32" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
-            <TextBlock Text="(Code - UI)" FontSize="32" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
-            <TextBlock Text="Kyle GAN" FontSize="42" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,20,0,0"/>
-            <TextBlock Text="Kuala Lampur - Malaysia" FontSize="32" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
-            <TextBlock Text="(Character + UI Art)" FontSize="32" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
-            <TextBlock Text="Eric KIM" FontSize="42" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,20,0,0"/>
-            <TextBlock Text="Quebec - Canada" FontSize="32" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
-            <TextBlock Text="(Environment + Level Art)" FontSize="32" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
-            <TextBlock Text="Dani KOGAN" FontSize="42" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,20,0,0"/>
-            <TextBlock Text="Quebec - Canada" FontSize="32" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
-            <TextBlock Text="(Animation - Code - Tech Sound)" FontSize="32" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
-            <TextBlock Text="Vasily SMAGIN" FontSize="42" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,20,0,0"/>
-            <TextBlock Text="Saint-Petersbourg - Russia" FontSize="32" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
-            <TextBlock Text="(Management - Sound)" FontSize="32" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,50,0" Background="{StaticResource TA_PanelBackgroundColor}">
+            <TextBlock Text="Tooth Ahead" FontSize="{StaticResource TA_TitleFontSize}" Foreground="{StaticResource TA_PrimaryColor}" 
+                       HorizontalAlignment="Center" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock Text="GGJ Build Edition" Style="{StaticResource CreditPersonTextStyle}" FontStyle="Italic"/>
+            
+            <TextBlock Text="Created by:" Style="{StaticResource CreditPersonTextStyle}" Margin="0,40,0,0"/>
+            <TextBlock Text="Benoit BOYER" Style="{StaticResource CreditPersonTextStyle}"/>
+            <TextBlock Text="Quebec - Canada" Style="{StaticResource CreditPersonSubtextStyle}"/>
+            <TextBlock Text="(Code - UI)" Style="{StaticResource CreditPersonSubtextStyle}"/>
+            
+            <TextBlock Text="Kyle GAN" Style="{StaticResource CreditPersonTextStyle}" Margin="0,20,0,0"/>
+            <TextBlock Text="Kuala Lampur - Malaysia" Style="{StaticResource CreditPersonSubtextStyle}"/>
+            <TextBlock Text="(Character + UI Art)" Style="{StaticResource CreditPersonSubtextStyle}"/>
+
+            <TextBlock Text="Eric KIM" Style="{StaticResource CreditPersonTextStyle}" Margin="0,20,0,0"/>
+            <TextBlock Text="Quebec - Canada" Style="{StaticResource CreditPersonSubtextStyle}"/>
+            <TextBlock Text="(Environment + Level Art)" Style="{StaticResource CreditPersonSubtextStyle}"/>
+
+            <TextBlock Text="Dani KOGAN" Style="{StaticResource CreditPersonTextStyle}" Margin="0,20,0,0"/>
+            <TextBlock Text="Quebec - Canada" Style="{StaticResource CreditPersonSubtextStyle}"/>
+            <TextBlock Text="(Animation - Code - Tech Sound)" Style="{StaticResource CreditPersonSubtextStyle}"/>
+
+            <TextBlock Text="Vasily SMAGIN" Style="{StaticResource CreditPersonTextStyle}" Margin="0,20,0,0"/>
+            <TextBlock Text="Saint-Petersbourg - Russia" Style="{StaticResource CreditPersonSubtextStyle}"/>
+            <TextBlock Text="(Management - Sound)" Style="{StaticResource CreditPersonSubtextStyle}"/>
         </StackPanel>
 
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,50">
-            <TextBlock Text="Thanks for playing !" FontSize="42" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" FontStyle="Italic"/>
+            <TextBlock Text="Thanks for playing !" Style="{StaticResource CreditPersonTextStyle}" TextAlignment="Center" FontStyle="Italic"/>
             <Button Content="Close game" HorizontalAlignment="Center" FontSize="60" Margin="0,20,0,0" Command="{Binding QuitCommand}"/>
         </StackPanel>
     </Grid>

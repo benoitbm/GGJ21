@@ -51,6 +51,21 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\Assets\Resources\UI\MainWindow.xaml.cs">
+      <Link>MainWindow.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Assets\Resources\UI\Minimap.xaml.cs">
+      <Link>Minimap.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Assets\Resources\UI\PlayerResources.xaml.cs">
+      <Link>PlayerResources.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Assets\Resources\UI\ResultScreen.xaml.cs">
+      <Link>ResultScreen.xaml.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Assets\Resources\UI\Timer.xaml.cs">
+      <Link>Timer.xaml.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -77,6 +92,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="..\..\..\Assets\Resources\UI\Library\DefaultTheme.Colors.xaml">
+      <Link>Assets\Resources\UI\Library\DefaultTheme.Colors.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\Assets\Resources\UI\Library\DefaultTheme.FontSizes.xaml">
+      <Link>Assets\Resources\UI\Library\DefaultTheme.FontSizes.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\..\..\Assets\Resources\UI\Library\DefaultTheme.xaml">
+      <Link>Assets\Resources\UI\Library\DefaultTheme.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="..\..\..\Assets\Resources\UI\MainWindow.xaml">
       <Link>MainWindow.xaml</Link>
       <Generator>MSBuild:Compile</Generator>

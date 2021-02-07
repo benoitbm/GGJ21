@@ -6,6 +6,9 @@
              xmlns:local="clr-namespace:GGJ21_UI"
              mc:Ignorable="d" 
              d:DesignHeight="1080" d:DesignWidth="1920">
+    <UserControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/GGJ21-UI;component/Assets/Resources/UI/Library/DefaultTheme.xaml"/>
+    </UserControl.Resources>
     <Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0">
             <Grid>
@@ -23,14 +26,14 @@
                     <Ellipse Width="6" Height="32" Fill="Red" VerticalAlignment="Center" Margin="33,4,33,36"/>
                 </Grid>
             </Grid>
-            <TextBlock FontSize="48" Foreground="White" Margin="15,0,0,0" VerticalAlignment="Center" Width="250">
+            <TextBlock FontSize="{StaticResource TA_LargeFontSize}" Foreground="{StaticResource TA_PrimaryColor}" Margin="16,0,0,0" VerticalAlignment="Center" Width="250">
                 <Run Text="{Binding Minutes, StringFormat='D2'}"/>
                 <Run Text=":"/>
                 <Run Text="{Binding Seconds, StringFormat='D2'}"/>
                 <Run Text=":"/>
                 <Run Text="{Binding Milliseconds, StringFormat='D2'}"/>
                 <TextBlock.Effect>
-                    <DropShadowEffect Color="Black" BlurRadius="2"/>
+                    <DropShadowEffect Color="{StaticResource TA_PrimaryDropShadowColor}" BlurRadius="2"/>
                 </TextBlock.Effect>
             </TextBlock>
         </StackPanel>

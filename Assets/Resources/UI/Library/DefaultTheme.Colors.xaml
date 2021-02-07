@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:GGJ21_UI">
+
+    <SolidColorBrush x:Key="TA_PrimaryColor" Color="White"/>
+    <SolidColorBrush x:Key="TA_PanelBackgroundColor" Color="#70000000"/>
+
+    <Color x:Key="TA_PrimaryDropShadowColor">#000</Color>
+
+</ResourceDictionary>

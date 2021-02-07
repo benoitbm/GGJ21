@@ -8,21 +8,37 @@
              IsHitTestVisible="False"
              x:Name="PlayerResources"
              d:DesignHeight="1080" d:DesignWidth="1920">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/GGJ21-UI;component/Assets/Resources/UI/Library/DefaultTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style x:Key="ResourceTextStyle" TargetType="TextBlock">
+                <Setter Property="Margin" Value="12,0,0,0"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="Foreground" Value="{StaticResource TA_PrimaryColor}"/>
+                <Setter Property="FontSize" Value="{StaticResource TA_DefaultFontSize}"/>
+                <Setter Property="Background" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
     <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
         <StackPanel Orientation="Vertical" Margin="50,50,0,0">
             <StackPanel Orientation="Horizontal">
                 <Image Source="pack://application:,,,/GGJ21-UI;component/Assets/Resources/UI/Assets/CharacterResources/tooth.png" Stretch="Uniform" Width="60" Height="50" />
-                <TextBlock Margin="12,0,0,0" Text="{Binding Score}" VerticalAlignment="Center" Foreground="White" FontSize="32" Background="Transparent">
+                <TextBlock Text="{Binding Score}" Style="{StaticResource ResourceTextStyle}">
                     <TextBlock.Effect>
-                        <DropShadowEffect Color="Black" BlurRadius="2"/>
+                        <DropShadowEffect Color="{StaticResource TA_PrimaryDropShadowColor}" BlurRadius="2"/>
                     </TextBlock.Effect>
                 </TextBlock>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
                 <Image Source="pack://application:,,,/GGJ21-UI;component/Assets/Resources/UI/Assets/CharacterResources/coin.png" Stretch="Uniform" Height="50" Width="60" />
-                <TextBlock Margin="12,0,0,0" Text="{Binding Money}" VerticalAlignment="Center" Foreground="White" FontSize="32" Background="Transparent">
+                <TextBlock Text="{Binding Money}" Style="{StaticResource ResourceTextStyle}">
                     <TextBlock.Effect>
-                        <DropShadowEffect Color="Black" BlurRadius="2"/>
+                        <DropShadowEffect Color="{StaticResource TA_PrimaryDropShadowColor}" BlurRadius="2"/>
                     </TextBlock.Effect>
                 </TextBlock>
             </StackPanel>

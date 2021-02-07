@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib"
+                    xmlns:local="clr-namespace:GGJ21_UI">
+
+    <System:Double x:Key="TA_DefaultFontSize">32</System:Double>
+    <System:Double x:Key="TA_IntermediateFontSize">42</System:Double>
+    <System:Double x:Key="TA_LargeFontSize">48</System:Double>
+    <System:Double x:Key="TA_BigFontSize">52</System:Double>
+    <System:Double x:Key="TA_TitleFontSize">72</System:Double>
+
+</ResourceDictionary>
