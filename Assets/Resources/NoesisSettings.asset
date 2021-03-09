@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NoesisSettings
   m_EditorClassIdentifier: 
   licenseName: GGJ21
-  licenseKey: JFc4jtsfOI4FZKT8gzGi22Z7QK+T7toV3YUmlVYvHtP40rv7
+  licenseKey: 32UI1/osCNflhsVnr3yIlk2ue2Ih8M/+E1Z5e+koNlH1oPMc
   applicationResources: {fileID: 11400000, guid: 9288dd36a3813e04a8a073467dc8d22f, type: 2}
   defaultFont: {fileID: 11400000, guid: b3ab3e4919f1b524381735ffc56c8632, type: 2}
   defaultFontSize: 16
